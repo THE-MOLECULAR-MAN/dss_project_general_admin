@@ -140,8 +140,9 @@
     },
     "dkuProperties": []
   },
-  "name": "Honker_General_DSS_Admin",
+  "name": "Honker General DSS Admin",
   "projectStatus": "Sandbox",
+  "imgPattern": 8,
   "metrics": {
     "probes": [],
     "engineConfig": {
@@ -204,7 +205,7 @@
     },
     "lastModifiedOn": 1753189175635
   },
-  "shortDesc": "The project *Honker_General_DSS_Admin* was created by Tim Honker on Jul 22nd 2025",
+  "shortDesc": "Import and export, Git repo stuff, clean up, etc.\n",
   "tags": [],
   "customFields": {},
   "checklists": {
