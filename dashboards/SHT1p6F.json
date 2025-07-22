@@ -1,0 +1,230 @@
+{
+  "pages": [
+    {
+      "id": "4GOqjnH",
+      "grid": {
+        "tiles": []
+      },
+      "show": true,
+      "showTitle": false,
+      "titleAlign": "CENTER",
+      "titleFontColor": "#444444",
+      "titleFontSize": 28,
+      "enableCrossFilters": true,
+      "backgroundColor": "#ffffff",
+      "showFilterPanel": true,
+      "filtersParams": {
+        "panelPosition": "TOP",
+        "engineType": "LINO"
+      }
+    }
+  ],
+  "owner": "demo",
+  "listed": true,
+  "name": "Honker_General_DSS_Admin\u0027s default dashboard",
+  "theme": {
+    "id": "__dku_dss_default_theme__",
+    "name": "Default",
+    "colors": [
+      "#1f77b4",
+      "#aec7e8",
+      "#ff7f0e",
+      "#ffbb78",
+      "#2ca02c",
+      "#98df8a",
+      "#d62728",
+      "#ff9896",
+      "#9467bd",
+      "#c5b0d5",
+      "#8c564b",
+      "#c49c94",
+      "#e377c2",
+      "#f7b6d2",
+      "#7f7f7f",
+      "#c7c7c7",
+      "#bcbd22",
+      "#dbdb8d",
+      "#17becf",
+      "#9edae5",
+      "#393b79",
+      "#5254a3",
+      "#6b6ecf",
+      "#9c9ede",
+      "#637939",
+      "#8ca252",
+      "#b5cf6b",
+      "#cedb9c",
+      "#8c6d31",
+      "#bd9e39",
+      "#e7ba52",
+      "#e7cb94",
+      "#843c39",
+      "#ad494a",
+      "#d6616b",
+      "#e7969c",
+      "#7b4173",
+      "#a55194",
+      "#ce6dbd",
+      "#de9ed6"
+    ],
+    "themePalettes": {
+      "discrete": {
+        "id": "default_theme",
+        "name": "Theme default",
+        "category": "Built-in palettes",
+        "colors": [
+          "#1f77b4",
+          "#aec7e8",
+          "#ff7f0e",
+          "#ffbb78",
+          "#2ca02c",
+          "#98df8a",
+          "#d62728",
+          "#ff9896",
+          "#9467bd",
+          "#c5b0d5",
+          "#8c564b",
+          "#c49c94",
+          "#e377c2",
+          "#f7b6d2",
+          "#7f7f7f",
+          "#c7c7c7",
+          "#bcbd22",
+          "#dbdb8d",
+          "#17becf",
+          "#9edae5",
+          "#393b79",
+          "#5254a3",
+          "#6b6ecf",
+          "#9c9ede",
+          "#637939",
+          "#8ca252",
+          "#b5cf6b",
+          "#cedb9c",
+          "#8c6d31",
+          "#bd9e39",
+          "#e7ba52",
+          "#e7cb94",
+          "#843c39",
+          "#ad494a",
+          "#d6616b",
+          "#e7969c",
+          "#7b4173",
+          "#a55194",
+          "#ce6dbd",
+          "#de9ed6"
+        ],
+        "sample": [
+          "#1f77b4",
+          "#aec7e8",
+          "#ff7f0e",
+          "#ffbb78",
+          "#2ca02c"
+        ],
+        "isCustom": false,
+        "createPairs": false
+      },
+      "continuous": [
+        {
+          "id": "default_theme",
+          "name": "Theme default",
+          "category": "Built-in palettes",
+          "colors": [
+            "#1f77b4",
+            "#2CA9FF"
+          ],
+          "isCustom": false,
+          "createPairs": false
+        },
+        {
+          "id": "default_theme_rev",
+          "name": "Theme default (rev)",
+          "category": "Built-in palettes",
+          "colors": [
+            "#2CA9FF",
+            "#1f77b4"
+          ],
+          "sample": [
+            "#2CA9FF",
+            "#1f77b4"
+          ],
+          "isCustom": false,
+          "createPairs": false
+        }
+      ],
+      "diverging": {
+        "id": "default_theme",
+        "name": "Theme default",
+        "category": "Built-in palettes",
+        "colors": [
+          "#1f77b4",
+          "#FFFFFF",
+          "#aec7e8"
+        ],
+        "isCustom": false,
+        "createPairs": false
+      }
+    },
+    "palettes": {
+      "discrete": "default_theme",
+      "continuous": "default_theme",
+      "diverging": "default_theme"
+    },
+    "generalFormatting": {
+      "fontSize": 11,
+      "fontColor": "#333333",
+      "hasBackground": false,
+      "fontFamily": "SourceSansPro"
+    },
+    "pageTitleFormatting": {
+      "fontSize": 28,
+      "fontColor": "#444444",
+      "hasBackground": false
+    },
+    "tileTitleFormatting": {
+      "fontSize": 13,
+      "fontColor": "#000000",
+      "hasBackground": false
+    },
+    "chartTitleFormatting": {
+      "fontSize": 15,
+      "fontColor": "#333333",
+      "hasBackground": false
+    },
+    "legendFormatting": {
+      "fontSize": 11,
+      "fontColor": "#333333",
+      "hasBackground": false
+    },
+    "pageTitleAlignment": "CENTER",
+    "backgroundColor": "#FFFFFF",
+    "tileSpacing": 8,
+    "tileFormatting": {
+      "borderOptions": {
+        "color": "#CCCCCC",
+        "radius": 0,
+        "size": 1
+      },
+      "backgroundOpacity": 1.0
+    },
+    "isCustomized": false,
+    "isBuiltIn": true
+  },
+  "showGrid": false,
+  "columnNumber": 36,
+  "showNavigationArrows": false,
+  "reloadWhenEventReceived": false,
+  "tileSpacing": 8,
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1753189175639
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
