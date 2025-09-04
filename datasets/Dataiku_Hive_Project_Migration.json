@@ -68,7 +68,7 @@
   },
   "tags": [],
   "params": {
-    "connection": "filesystem_managed",
+    "connection": "filesystem_folders",
     "path": "Dataiku_Hive_Project_Migration",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
@@ -92,7 +92,7 @@
       {"name":"DATE_PROJECT_WAS_LAST_MODIFIED","type":"string"},
       {"name":"Recipe_types_used_in_project","type":"string"}
     ],
-    "userModified": false
+    "userModified": true
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],
