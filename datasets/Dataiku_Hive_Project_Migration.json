@@ -85,9 +85,12 @@
   },
   "schema": {
     "columns": [
-      {"name":"A","type":"bigint"},
-      {"name":"B","type":"double"},
-      {"name":"C","type":"bigint"}
+      {"name":"PROJECT_KEY","type":"string"},
+      {"name":"NUMBER_OF_HIVE_RECIPES_USED_IN_THIS_PROJECT","type":"bigint"},
+      {"name":"Dataset_types_used_in_project","type":"string"},
+      {"name":"Owner","type":"string"},
+      {"name":"DATE_PROJECT_WAS_LAST_MODIFIED","type":"string"},
+      {"name":"Recipe_types_used_in_project","type":"string"}
     ],
     "userModified": false
   },
