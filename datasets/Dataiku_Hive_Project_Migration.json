@@ -92,7 +92,7 @@
       {"name":"DATE_PROJECT_WAS_LAST_MODIFIED","type":"string"},
       {"name":"Recipe_types_used_in_project","type":"string"}
     ],
-    "userModified": true
+    "userModified": false
   },
   "typeSystemVersion": "V2",
   "dkuProperties": [],
