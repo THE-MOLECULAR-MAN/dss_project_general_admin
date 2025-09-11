@@ -87,10 +87,10 @@
       }
     },
     "container": {
-      "containerMode": "INHERIT"
+      "containerMode": "NONE"
     },
     "containerForVisualRecipesWorkloads": {
-      "containerMode": "INHERIT"
+      "containerMode": "NONE"
     },
     "datasetsCreationSettings": {
       "useGlobal": true,
