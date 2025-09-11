@@ -1,7 +1,13 @@
 {
   "tags": {
-    "recipe-editor": {},
-    "admin": {},
-    "dss_administration": {}
+    "recipe-editor": {
+      "color": "#1ac2ab"
+    },
+    "admin": {
+      "color": "#a088bd"
+    },
+    "dss_administration": {
+      "color": "#a088bd"
+    }
   }
 }
