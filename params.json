@@ -156,7 +156,7 @@
     "dkuProperties": []
   },
   "name": "General DSS Admin",
-  "projectStatus": "Sandbox",
+  "projectStatus": "In use",
   "imgPattern": 8,
   "metrics": {
     "probes": [],
