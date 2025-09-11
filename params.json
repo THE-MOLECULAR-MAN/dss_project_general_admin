@@ -115,10 +115,10 @@
       "promoted": false
     },
     "cluster": {
-      "clusterMode": "INHERIT"
+      "clusterMode": "EXPLICIT_CLUSTER"
     },
     "k8sCluster": {
-      "clusterMode": "INHERIT"
+      "clusterMode": "EXPLICIT_CLUSTER"
     },
     "virtualWebAppBackendSettings": {
       "mode": "INHERIT",
