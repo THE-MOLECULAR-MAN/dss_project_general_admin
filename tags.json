@@ -1,5 +1,7 @@
 {
   "tags": {
-    "recipe-editor": {}
+    "recipe-editor": {},
+    "admin": {},
+    "dss_administration": {}
   }
 }

@@ -222,7 +222,9 @@
   },
   "description": "This data processing flow involves a series of operations designed to transform input datasets using a Python-based recipe. The flow begins with unspecified input datasets, which are processed through a Python script. This script likely performs data manipulation, transformation, or analysis tasks, although the specific operations are not detailed.\n\nThe final result of this flow is an output dataset, which is currently labeled as \"null.\" This suggests that the flow might be in a preliminary stage, or the output dataset has not been fully defined or named yet. The output dataset is expected to contain columns, but these columns are not specified in the current description.\n\nOverall, the flow is set up to take raw data, process it through a Python script, and produce a structured output dataset, which can then be used for further analysis or reporting. The lack of specific details about the input and output datasets indicates that the flow might be in development or requires further configuration to define its components fully.\n\nDescription generated on 9/11/2025",
   "shortDesc": "Import and export, Git repo stuff, clean up, etc.\n",
-  "tags": [],
+  "tags": [
+    "dss_administration"
+  ],
   "customFields": {},
   "checklists": {
     "checklists": []
