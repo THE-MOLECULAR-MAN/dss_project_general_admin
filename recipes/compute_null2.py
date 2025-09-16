@@ -1,17 +1,29 @@
-# -*- coding: utf-8 -*-
+# update_all_dss_projects_on_github.py
+# Tim H 2025
+#
+# This script iterates through all projects on a DSS instance and attempts to push all commits to GitHub
+# for projects that are connected to GitHub.
+# It is intended to be run as a scenario on a schedule
+#
+# https://developer.dataiku.com/latest/tutorials/devtools/using-api-with-git-project/index.html
+# https://developer.dataiku.com/latest/api-reference/python/projects.html#dataikuapi.dss.project.DSSProjectGit.get_remote
+
 import dataiku
-import pandas as pd, numpy as np
 from dataiku import pandasutils as pdu
+import pandas as pd
 
+client = dataiku.api_client()
+projects = client.list_projects()
 
+df_projects = pd.DataFrame(projects)
 
-# Compute recipe outputs
-# TODO: Write here your actual code that computes the outputs
-# NB: DSS supports several kinds of APIs for reading and writing data. Please see doc.
-
-null2_df = ... # Compute a Pandas dataframe to write into null2
-
-
-# Write recipe outputs
-null2 = dataiku.Dataset("null2")
-null2.write_with_schema(null2_df)
+for iter_project_key in client.list_project_keys():
+    proj = client.get_project(iter_project_key)
+    project_git = proj.get_project_git()    
+    r = project_git.get_remote()
+    if r:
+        res = project_git.push()
+        print(f"{iter_project_key} pushed.")
+        # print(res['output'])
+    else:
+        print(f"{iter_project_key} is not connected to GitHub")
