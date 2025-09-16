@@ -30,8 +30,6 @@ for iter_project_key in client.list_project_keys():
         # print(res)
         if not res.get('success',False):
             print(f"[ERROR] pushing {iter_project_key}")
-        # print(f"{iter_project_key} pushed.")
-        # print(res['output'])
         pushed.add(iter_project_key)
     else:
         # print(f"{iter_project_key} is not connected to GitHub")
