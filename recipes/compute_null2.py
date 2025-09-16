@@ -25,6 +25,7 @@ for iter_project_key in client.list_project_keys():
     project_git = proj.get_project_git()    
     r = project_git.get_remote()
     if r:
+        print(r)
         res = project_git.push()
         print(res)
         if res['success']:
