@@ -36,5 +36,7 @@ for iter_project_key in client.list_project_keys():
     else:
         # print(f"{iter_project_key} is not connected to GitHub")
         not_connected.add(iter_project_key)
-print(f"Pushed {len(pushed)} projects: \n{pushed}\n")
+print(f"Successfully pushed {len(pushed)} projects: \n{pushed}\n")
 print(f"{len(not_connected)} projects not connected to GitHub: \n{not_connected}")
+
+print(f"Projects had errors when pushig:\n{errored}")
