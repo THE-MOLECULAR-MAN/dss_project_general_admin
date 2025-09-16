@@ -41,6 +41,33 @@
           },
           "proceedOnFailure": false
         }
+      },
+      {
+        "id": "runmacro_pyrunnable_builtin-macros_clear-scenario-logs",
+        "type": "runnable",
+        "name": "Clear run logs from all projects older than 15 days",
+        "enabled": true,
+        "alwaysShowComment": false,
+        "runConditionType": "RUN_ALWAYS",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "runnableType": "pyrunnable_builtin-macros_clear-scenario-logs",
+          "config": {
+            "age": 15,
+            "performDeletion": true
+          },
+          "adminConfig": {
+            "allProjects": true
+          },
+          "proceedOnFailure": false
+        }
       }
     ]
   },
