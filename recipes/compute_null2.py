@@ -41,3 +41,4 @@ print(f"{len(not_connected)} projects not connected to GitHub: \n{not_connected}
 
 if len(errored) > 0:
     print(f"Projects had errors when pushig:\n{errored}")
+    
