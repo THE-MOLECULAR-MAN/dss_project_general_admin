@@ -39,4 +39,5 @@ for iter_project_key in client.list_project_keys():
 print(f"Successfully pushed {len(pushed)} projects: \n{pushed}\n")
 print(f"{len(not_connected)} projects not connected to GitHub: \n{not_connected}")
 
-print(f"Projects had errors when pushig:\n{errored}")
+if len(errored) > 0:
+    print(f"Projects had errors when pushig:\n{errored}")
