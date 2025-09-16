@@ -15,6 +15,19 @@ failed_builds = set()
 successful_builds = set()
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+def clear_pip_tmp():
+    # This should probably be in the Finally clause above?
+    import os
+    import shutil
+    import glob
+
+    for d in glob.glob('/tmp/pip-*'):
+        print(f'Deleting {d}...')
+        if os.path.isdir(d):
+            shutil.rmtree(d, ignore_errors=True)
+        else:
+            os.remove(d)
+
 def _process_code_env(code_env_info):
     try:
         client = dataiku.api_client()
@@ -50,24 +63,13 @@ def _process_code_env(code_env_info):
 # >2 multi-threading causes /tmp to balloon in disk space from pip, causes / root file system to have 0% free space
 # Fleet Manager instances only have a root file system size of 31 GB, 21 of which are used by base OS
 # /tmp is mounted to /
+clear_pip_tmp() # in case I stopped the last run
 max_workers = 1 # os.cpu_count() or 1
 with ThreadPoolExecutor(max_workers=max_workers) as executor:
     executor.map(_process_code_env, code_envs)
     
 print('\nFinished.')
-
-# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
-# This should probably be in the Finally clause above?
-import os
-import shutil
-import glob
-
-for d in glob.glob('/tmp/pip-*'):
-    print(f'Deleting {d}...')
-    if os.path.isdir(d):
-        shutil.rmtree(d, ignore_errors=False)
-    else:
-        os.remove(d)
+clear_pip_tmp() # clean up
 
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 if len(failed_builds) > 0:
