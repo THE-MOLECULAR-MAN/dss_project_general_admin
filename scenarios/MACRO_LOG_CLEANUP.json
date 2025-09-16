@@ -1,7 +1,7 @@
 {
   "type": "step_based",
   "name": "Macro_Log_Cleanup",
-  "active": false,
+  "active": true,
   "checklists": {
     "checklists": []
   },
@@ -11,7 +11,27 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "OIJShA6G",
+      "type": "temporal",
+      "name": "Time-based",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "repeatFrequency": 1,
+        "frequency": "Weekly",
+        "startingFrom": "2025-09-16",
+        "daysOfWeek": [
+          "Tuesday"
+        ],
+        "minute": 0,
+        "hour": 13,
+        "timezone": "America/New_York",
+        "lastUpdate": 1758031990126
+      }
+    }
+  ],
   "reporters": [],
   "params": {
     "steps": [
