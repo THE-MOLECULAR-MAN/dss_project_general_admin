@@ -2,13 +2,6 @@
   "type": "step_based",
   "name": "Macro_Log_Cleanup",
   "active": false,
-  "creationTag": {
-    "versionNumber": 0,
-    "lastModifiedBy": {
-      "login": "demo"
-    },
-    "lastModifiedOn": 1758031700772
-  },
   "checklists": {
     "checklists": []
   },
@@ -21,7 +14,35 @@
   "triggers": [],
   "reporters": [],
   "params": {
-    "steps": []
+    "steps": [
+      {
+        "id": "runmacro_pyrunnable_builtin-macros_clear-job-logs",
+        "type": "runnable",
+        "name": "Clear job logs older than 15 days from all projects",
+        "enabled": true,
+        "alwaysShowComment": false,
+        "runConditionType": "RUN_ALWAYS",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "runnableType": "pyrunnable_builtin-macros_clear-job-logs",
+          "config": {
+            "age": 15,
+            "performDeletion": true
+          },
+          "adminConfig": {
+            "allProjects": true
+          },
+          "proceedOnFailure": false
+        }
+      }
+    ]
   },
   "automationLocal": false,
   "customFields": {},
