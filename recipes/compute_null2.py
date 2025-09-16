@@ -29,7 +29,7 @@ for iter_project_key in client.list_project_keys():
         res = project_git.push()
         # print(res)
         if res.get('success',False):
-            print(f"Error pushing {iter_project_key}: {res['status']}, {res['output']}")
+            print(f"Error pushing {iter_project_key}")
         # print(f"{iter_project_key} pushed.")
         # print(res['output'])
         pushed.add(iter_project_key)
