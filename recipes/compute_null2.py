@@ -17,13 +17,20 @@ projects = client.list_projects()
 
 df_projects = pd.DataFrame(projects)
 
+pushed = []
+not_connected = []
+
 for iter_project_key in client.list_project_keys():
     proj = client.get_project(iter_project_key)
     project_git = proj.get_project_git()    
     r = project_git.get_remote()
     if r:
         res = project_git.push()
-        print(f"{iter_project_key} pushed.")
+        #print(f"{iter_project_key} pushed.")
         # print(res['output'])
+        pushed.append(iter_project_key)
     else:
-        print(f"{iter_project_key} is not connected to GitHub")
+        #print(f"{iter_project_key} is not connected to GitHub")
+        not_connected.append(iter_project_key)
+print(f"Pushed {len(pushed)} projects: \n{pushed}\n")
+print(f"{len(not_connected)} projects not connected to GitHub: \n{not_connected}")
