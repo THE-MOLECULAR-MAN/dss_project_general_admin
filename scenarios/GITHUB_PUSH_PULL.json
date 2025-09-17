@@ -1,7 +1,7 @@
 {
   "type": "step_based",
   "name": "Update_GitHub",
-  "active": false,
+  "active": true,
   "checklists": {
     "checklists": []
   },
@@ -11,7 +11,27 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "tBcE9p3k",
+      "type": "temporal",
+      "name": "5:30pm every day",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "repeatFrequency": 1,
+        "frequency": "Daily",
+        "startingFrom": "2025-09-17",
+        "daysOfWeek": [
+          "Wednesday"
+        ],
+        "minute": 30,
+        "hour": 17,
+        "timezone": "America/New_York",
+        "lastUpdate": 1758119875852
+      }
+    }
+  ],
   "reporters": [],
   "params": {
     "steps": [
