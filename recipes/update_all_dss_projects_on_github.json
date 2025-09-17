@@ -21,12 +21,7 @@
   "inputs": {},
   "outputs": {
     "main": {
-      "items": [
-        {
-          "ref": "null2",
-          "appendMode": false
-        }
-      ]
+      "items": []
     }
   },
   "labels": [],
