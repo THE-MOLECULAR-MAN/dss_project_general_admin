@@ -17,7 +17,7 @@ projects = client.list_projects()
 
 df_projects = pd.DataFrame(projects)
 
-pushed = set()
+successful = set()
 not_connected = set()
 errored = set()
 
@@ -34,7 +34,7 @@ for iter_project_key in client.list_project_keys():
             print(f"[ERROR] pushing {iter_project_key}")
             errored.add(iter_project_key)
             continue
-        pushed.add(iter_project_key)
+        successful.add(iter_project_key)
     else:
         # print(f"{iter_project_key} is not connected to GitHub")
         not_connected.add(iter_project_key)
