@@ -1,5 +1,5 @@
 # -------------------------------------------------------------------------------- NOTEBOOK-CELL: MARKDOWN
-# # Rebuild all code environments
+# rebuild_all_code_environments.py
 # 
 # This Python Notebook creates a list of all Code Environments, then attempts to update each of them. If one fails to update, then it will retry with the "Force Rebuild" enabled which will clear the entire code environment before rebuilding it.
 # 
