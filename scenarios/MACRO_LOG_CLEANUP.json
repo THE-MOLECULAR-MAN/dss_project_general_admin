@@ -1,6 +1,6 @@
 {
   "type": "step_based",
-  "name": "Macro_Log_Cleanup",
+  "name": "Clean up scenario and job logs",
   "active": true,
   "checklists": {
     "checklists": []
@@ -28,7 +28,7 @@
         "minute": 0,
         "hour": 13,
         "timezone": "America/New_York",
-        "lastUpdate": 1758031990126
+        "lastUpdate": 1758129850673
       }
     }
   ],
