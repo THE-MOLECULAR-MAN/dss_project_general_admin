@@ -16,9 +16,9 @@
   "params": {
     "steps": [
       {
-        "id": "build_2_true",
-        "type": "build_flowitem",
-        "name": "Step #1",
+        "id": "custom_python_EQb2mkQ+f48cICdOI8RXLw",
+        "type": "custom_python",
+        "name": "Update_GitHub",
         "enabled": true,
         "alwaysShowComment": false,
         "runConditionType": "RUN_IF_STATUS_MATCH",
@@ -31,12 +31,10 @@
         "delayBetweenRetries": 10,
         "maxRetriesOnFail": 0,
         "params": {
-          "builds": [],
-          "jobType": "RECURSIVE_FORCED_BUILD",
-          "autoUpdateSchemaBeforeEachRecipeRun": false,
-          "stopAtFlowZoneBoundary": false,
-          "refreshHiveMetastore": true,
-          "handleWarningsAs": "WARNING",
+          "script": "# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE\n# update_all_dss_projects_on_github.py\n# Tim H 2025\n#\n# This script iterates through all projects on a DSS instance and attempts to push all commits to GitHub\n# for projects that are connected to GitHub.\n# It is intended to be run as a scenario on a schedule\n#\n# https://developer.dataiku.com/latest/tutorials/devtools/using-api-with-git-project/index.html\n# https://developer.dataiku.com/latest/api-reference/python/projects.html#dataikuapi.dss.project.DSSProjectGit.get_remote\n\nimport dataiku\nfrom dataiku import pandasutils as pdu\nimport pandas as pd\n\n# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE\nclient \u003d dataiku.api_client()\nprojects \u003d client.list_projects()\n\nsuccessful \u003d set()\nnot_connected \u003d set()\nerrored \u003d set()\n\n# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE\nfor iter_project_key in client.list_project_keys():\n    try:\n        proj \u003d client.get_project(iter_project_key)\n        project_git \u003d proj.get_project_git()\n        r \u003d project_git.get_remote()\n        if r:\n            res_push \u003d project_git.push()\n            res_pull \u003d project_git.pull()\n            if (not res_push.get(\u0027success\u0027,False)) or (not res_pull.get(\u0027success\u0027,False)):\n                print(f\"[ERROR] pushing {iter_project_key}\")\n                errored.add(iter_project_key)\n                continue\n            successful.add(iter_project_key)\n        else:\n            # print(f\"{iter_project_key} is not connected to GitHub\")\n            not_connected.add(iter_project_key)\n    except Exception as e:\n        errored.add(iter_project_key)\n        continue\n\n# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE\nsuccessful\n\n# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE\nnot_connected\n\n# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE\nerrored",
+          "envSelection": {
+            "envMode": "INHERIT"
+          },
           "proceedOnFailure": false
         }
       }
