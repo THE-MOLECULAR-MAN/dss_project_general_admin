@@ -15,8 +15,6 @@ import pandas as pd
 client = dataiku.api_client()
 projects = client.list_projects()
 
-df_projects = pd.DataFrame(projects)
-
 successful = set()
 not_connected = set()
 errored = set()
