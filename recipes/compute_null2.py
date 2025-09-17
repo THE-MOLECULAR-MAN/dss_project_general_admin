@@ -28,6 +28,7 @@ for iter_project_key in client.list_project_keys():
     if r:
         print(r)
         res = project_git.push()
+        res = project_git.pull()
         # print(res)
         if not res.get('success',False):
             print(f"[ERROR] pushing {iter_project_key}")
