@@ -1,3 +1,4 @@
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 # update_all_dss_projects_on_github.py
 # Tim H 2025
 #
@@ -12,6 +13,7 @@ import dataiku
 from dataiku import pandasutils as pdu
 import pandas as pd
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 client = dataiku.api_client()
 projects = client.list_projects()
 
@@ -19,25 +21,33 @@ successful = set()
 not_connected = set()
 errored = set()
 
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
 for iter_project_key in client.list_project_keys():
-    proj = client.get_project(iter_project_key)
-    project_git = proj.get_project_git()    
-    r = project_git.get_remote()
-    if r:
-        # print(r)
-        res_push = project_git.push()
-        res_pull = project_git.pull() # code studiodoes onot exist for PMM
-        # print(res)
-        if (not res_push.get('success',False)) or (not res_pull.get('success',False)):
-            print(f"[ERROR] pushing {iter_project_key}")
-            errored.add(iter_project_key)
-            continue
-        successful.add(iter_project_key)
-    else:
-        # print(f"{iter_project_key} is not connected to GitHub")
-        not_connected.add(iter_project_key)
-print(f"Successfully pushed {len(successful)} projects: \n{pushed}\n")
-print(f"{len(not_connected)} projects not connected to GitHub: \n{not_connected}")
+    try:
+        proj = client.get_project(iter_project_key)
+        project_git = proj.get_project_git()
+        r = project_git.get_remote()
+        if r:
+            res_push = project_git.push()
+            res_pull = project_git.pull() # code studiodoes onot exist for PMM
+            if (not res_push.get('success',False)) or (not res_pull.get('success',False)):
+#             if not res_push.get('success',False):
+                print(f"[ERROR] pushing {iter_project_key}")
+                errored.add(iter_project_key)
+                continue
+            successful.add(iter_project_key)
+        else:
+            # print(f"{iter_project_key} is not connected to GitHub")
+            not_connected.add(iter_project_key)
+    except Exception as e:
+        errored.add(iter_project_key)
+        continue
 
-if len(errored) > 0:
-    print(f"Projects had errors when pushig:\n{errored}")
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+successful
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+not_connected
+
+# -------------------------------------------------------------------------------- NOTEBOOK-CELL: CODE
+errored
