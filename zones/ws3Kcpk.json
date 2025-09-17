@@ -1,7 +1,12 @@
 {
   "name": "Rebuild all code environments",
   "color": "#8C2DA7",
-  "items": [],
+  "items": [
+    {
+      "objectId": "rebuild_all_code_environments",
+      "objectType": "RECIPE"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
