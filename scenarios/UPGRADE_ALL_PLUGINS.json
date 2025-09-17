@@ -11,7 +11,28 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [],
-  "triggers": [],
+  "triggers": [
+    {
+      "id": "RYeqG5I0",
+      "type": "temporal",
+      "name": "3pm every day",
+      "delay": 5,
+      "active": true,
+      "params": {
+        "repeatFrequency": 1,
+        "frequency": "Daily",
+        "startingFrom": "2025-09-17",
+        "daysOfWeek": [
+          "Wednesday"
+        ],
+        "monthlyRunOn": "ON_THE_DAY",
+        "minute": 0,
+        "hour": 15,
+        "timezone": "America/New_York",
+        "lastUpdate": 1758120167390
+      }
+    }
+  ],
   "reporters": [],
   "params": {
     "steps": [
