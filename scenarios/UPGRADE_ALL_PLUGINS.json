@@ -29,13 +29,13 @@
         "minute": 0,
         "hour": 15,
         "timezone": "America/New_York",
-        "lastUpdate": 1758120410522
+        "lastUpdate": 1758120417997
       }
     }
   ],
   "reporters": [
     {
-      "active": true,
+      "active": false,
       "messaging": {
         "type": "slack-scenario",
         "configuration": {
