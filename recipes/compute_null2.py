@@ -27,10 +27,10 @@ for iter_project_key in client.list_project_keys():
     r = project_git.get_remote()
     if r:
         # print(r)
-        res = project_git.push()
-        res = project_git.pull()
+        res_push = project_git.push()
+        res_pull = project_git.pull()
         # print(res)
-        if not res.get('success',False):
+        if (not res_push.get('success',False)) or (not res_pull.get('success',False)):
             print(f"[ERROR] pushing {iter_project_key}")
             errored.add(iter_project_key)
         pushed.add(iter_project_key)
