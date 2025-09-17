@@ -1,6 +1,6 @@
 {
   "type": "step_based",
-  "name": "GitHub_Push_Pull",
+  "name": "Update_GitHub",
   "active": false,
   "checklists": {
     "checklists": []
