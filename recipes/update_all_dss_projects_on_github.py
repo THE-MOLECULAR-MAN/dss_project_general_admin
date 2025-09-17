@@ -29,9 +29,8 @@ for iter_project_key in client.list_project_keys():
         r = project_git.get_remote()
         if r:
             res_push = project_git.push()
-            res_pull = project_git.pull() # code studiodoes onot exist for PMM
+            res_pull = project_git.pull()
             if (not res_push.get('success',False)) or (not res_pull.get('success',False)):
-#             if not res_push.get('success',False):
                 print(f"[ERROR] pushing {iter_project_key}")
                 errored.add(iter_project_key)
                 continue
