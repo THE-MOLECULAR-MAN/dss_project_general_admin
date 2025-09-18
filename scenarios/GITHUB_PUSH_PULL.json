@@ -2,6 +2,7 @@
   "type": "step_based",
   "name": "Update_GitHub",
   "active": true,
+  "runAsUser": "admin",
   "checklists": {
     "checklists": []
   },
@@ -28,7 +29,7 @@
         "minute": 30,
         "hour": 17,
         "timezone": "America/New_York",
-        "lastUpdate": 1758119875852
+        "lastUpdate": 1758196939768
       }
     }
   ],
