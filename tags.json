@@ -1,14 +1,17 @@
 {
   "tags": {
+    "deleted-recipe-editor": {},
     "recipe-editor": {
       "color": "#1ac2ab"
+    },
+    "imported": {
+      "color": "#263238"
     },
     "admin": {
       "color": "#a088bd"
     },
     "dss_administration": {
       "color": "#a088bd"
-    },
-    "deleted-recipe-editor": {}
+    }
   }
 }
