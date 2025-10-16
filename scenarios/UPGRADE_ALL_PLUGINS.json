@@ -1,7 +1,7 @@
 {
   "type": "step_based",
   "name": "Upgrade_All_Plugins",
-  "active": false,
+  "active": true,
   "runAsUser": "admin",
   "checklists": {
     "checklists": []
@@ -30,7 +30,7 @@
         "minute": 0,
         "hour": 15,
         "timezone": "America/New_York",
-        "lastUpdate": 1759773560752
+        "lastUpdate": 1760583432950
       }
     }
   ],
