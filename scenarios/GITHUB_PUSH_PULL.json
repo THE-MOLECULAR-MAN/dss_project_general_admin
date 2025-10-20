@@ -29,7 +29,7 @@
         "minute": 30,
         "hour": 17,
         "timezone": "America/New_York",
-        "lastUpdate": 1760984251860
+        "lastUpdate": 1760984320249
       }
     }
   ],
@@ -50,6 +50,7 @@
         }
       },
       "id": "VYjXFiAh",
+      "name": "Slack",
       "runConditionEnabled": true,
       "runCondition": "outcome !\u003d \u0027SUCCESS\u0027",
       "phase": "END"
