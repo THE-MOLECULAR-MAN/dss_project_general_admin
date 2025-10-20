@@ -16,7 +16,7 @@
     {
       "id": "RYeqG5I0",
       "type": "temporal",
-      "name": "3pm every day",
+      "name": "8:30am ET every day",
       "delay": 5,
       "active": true,
       "params": {
@@ -27,10 +27,10 @@
           "Wednesday"
         ],
         "monthlyRunOn": "ON_THE_DAY",
-        "minute": 0,
-        "hour": 15,
+        "minute": 30,
+        "hour": 8,
         "timezone": "America/New_York",
-        "lastUpdate": 1760583432950
+        "lastUpdate": 1760983959427
       }
     }
   ],
