@@ -140,7 +140,7 @@
     },
     {
       "last": false,
-      "max": false,
+      "max": true,
       "firstLastNotNull": false,
       "column": "disk_size_megabytes",
       "count": false,
@@ -150,7 +150,7 @@
       "type": "double",
       "concatDistinct": false,
       "sum2": false,
-      "min": false,
+      "min": true,
       "countDistinct": false,
       "avg": true,
       "median": true,
@@ -226,6 +226,14 @@
           {
             "name": "envLang",
             "type": "string"
+          },
+          {
+            "name": "disk_size_megabytes_min",
+            "type": "double"
+          },
+          {
+            "name": "disk_size_megabytes_max",
+            "type": "double"
           },
           {
             "name": "disk_size_megabytes_avg",
