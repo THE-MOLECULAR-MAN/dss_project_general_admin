@@ -142,15 +142,15 @@
       "column": "disk_size_megabytes",
       "count": false,
       "$idx": 6,
-      "sum": false,
+      "sum": true,
       "concat": false,
-      "type": "string",
+      "type": "double",
       "concatDistinct": false,
       "sum2": false,
       "min": false,
       "countDistinct": false,
-      "avg": false,
-      "median": false,
+      "avg": true,
+      "median": true,
       "$selected": false,
       "stddev": false,
       "first": false
@@ -223,6 +223,18 @@
           {
             "name": "envName",
             "type": "string"
+          },
+          {
+            "name": "disk_size_megabytes_avg",
+            "type": "double"
+          },
+          {
+            "name": "disk_size_megabytes_median",
+            "type": "double"
+          },
+          {
+            "name": "disk_size_megabytes_sum",
+            "type": "double"
           },
           {
             "name": "count",
