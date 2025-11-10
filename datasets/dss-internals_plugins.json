@@ -50,7 +50,8 @@
       {"name":"description","type":"string"},
       {"name":"author","type":"string"},
       {"name":"tags","type":"string"},
-      {"name":"version","type":"string"}
+      {"name":"version","type":"string"},
+      {"name":"usages","type":"string"}
     ],
     "userModified": true
   },
