@@ -48,16 +48,34 @@
   "otherColumns": [],
   "pivots": [
     {
+      "valueLimit": "TOP_N",
       "minOccLimit": 0,
-      "topnLimit": 0,
+      "topnLimit": 20,
       "globalCount": true,
       "explicitValues": [],
       "keyColumns": [
         "envName"
       ],
-      "valueColumns": []
+      "valueColumns": [
+        {
+          "last": false,
+          "max": false,
+          "column": "disk_size_megabytes",
+          "count": false,
+          "sum": true,
+          "concat": false,
+          "type": "double",
+          "$agg": "sum",
+          "countDistinct": false,
+          "min": false,
+          "avg": false,
+          "stddev": false,
+          "first": false
+        }
+      ]
     }
   ],
   "computedColumns": [],
-  "customAggregates": []
+  "customAggregates": [],
+  "enginesPreferences": {}
 }
