@@ -15,10 +15,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "xzibit_codeenvs_copy_by_envName",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "compute_xzibit_codeenvs_copy_by_envName2",
       "objectType": "RECIPE"
     },
