@@ -51,7 +51,7 @@
       {"name":"pythonInterpreter","type":"string"},
       {"name":"corePackagesSet","type":"string"},
       {"name":"path","type":"string"},
-      {"name":"disk_size_megabytes","type":"string"},
+      {"name":"disk_size_megabytes","type":"double","meaning":"DoubleMeaning"},
       {"name":"usages","type":"string"}
     ],
     "userModified": true
