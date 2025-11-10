@@ -70,6 +70,7 @@
       {"name":"corePackagesSet","type":"string"},
       {"name":"path","type":"string"},
       {"name":"size_bytes","type":"bigint"},
+      {"name":"size_megabytes","type":"double"},
       {"name":"usages","type":"string"}
     ],
     "userModified": true
