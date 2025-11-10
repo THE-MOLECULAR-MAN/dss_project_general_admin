@@ -63,6 +63,8 @@
   "schema": {
     "columns": [
       {"name":"envLang","type":"string"},
+      {"name":"disk_size_megabytes_min","type":"double"},
+      {"name":"disk_size_megabytes_max","type":"double"},
       {"name":"disk_size_megabytes_avg","type":"double"},
       {"name":"disk_size_megabytes_median","type":"double"},
       {"name":"disk_size_megabytes_sum","type":"double"},
