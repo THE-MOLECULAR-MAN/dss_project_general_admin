@@ -7,15 +7,20 @@
     {
       "last": false,
       "max": false,
-      "column": "envName",
+      "firstLastNotNull": false,
+      "column": "envLang",
       "count": false,
+      "$idx": 1,
       "sum": false,
       "concat": false,
       "type": "string",
-      "countDistinct": false,
+      "concatDistinct": false,
+      "sum2": false,
       "min": false,
+      "countDistinct": false,
       "avg": false,
       "median": false,
+      "$selected": false,
       "stddev": false,
       "first": false
     }
@@ -25,16 +30,14 @@
       "last": false,
       "max": false,
       "firstLastNotNull": false,
-      "column": "envLang",
+      "column": "envName",
       "count": false,
       "$idx": 0,
       "sum": false,
       "concat": false,
       "type": "string",
-      "concatDistinct": false,
-      "sum2": false,
-      "min": false,
       "countDistinct": false,
+      "min": false,
       "avg": false,
       "median": false,
       "stddev": false,
@@ -221,7 +224,7 @@
       "schema": {
         "columns": [
           {
-            "name": "envName",
+            "name": "envLang",
             "type": "string"
           },
           {
