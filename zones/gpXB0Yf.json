@@ -1,7 +1,28 @@
 {
   "name": "Code Env size",
   "color": "#31439C",
-  "items": [],
+  "items": [
+    {
+      "objectId": "xzibit_codeenvs",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_xzibit_codeenvs_copy",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "xzibit_codeenvs_copy",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_xzibit_codeenvs_copy_by_envName",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "xzibit_codeenvs_copy_by_envName",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
