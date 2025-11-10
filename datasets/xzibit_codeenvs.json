@@ -47,9 +47,11 @@
       {"name":"envName","type":"string"},
       {"name":"envLang","type":"string"},
       {"name":"deploymentMode","type":"string"},
-      {"name":"owner","type":"string","meaning":"Text"},
+      {"name":"owner","type":"string"},
       {"name":"pythonInterpreter","type":"string"},
-      {"name":"isUptodate","type":"string"},
+      {"name":"corePackagesSet","type":"string"},
+      {"name":"path","type":"string"},
+      {"name":"size_bytes","type":"string"},
       {"name":"usages","type":"string"}
     ],
     "userModified": true
