@@ -62,7 +62,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"envName","type":"string"},
+      {"name":"envLang","type":"string"},
       {"name":"disk_size_megabytes_avg","type":"double"},
       {"name":"disk_size_megabytes_median","type":"double"},
       {"name":"disk_size_megabytes_sum","type":"double"},
