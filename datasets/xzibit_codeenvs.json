@@ -47,7 +47,7 @@
       {"name":"envName","type":"string"},
       {"name":"envLang","type":"string"},
       {"name":"deploymentMode","type":"string"},
-      {"name":"owner","type":"string"},
+      {"name":"owner","type":"string","meaning":"Text"},
       {"name":"pythonInterpreter","type":"string"},
       {"name":"isUptodate","type":"string"},
       {"name":"usages","type":"string"}
