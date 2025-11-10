@@ -51,7 +51,8 @@
       {"name":"author","type":"string"},
       {"name":"tags","type":"string"},
       {"name":"version","type":"string"},
-      {"name":"usages","type":"string"}
+      {"name":"project_usages","type":"string"},
+      {"name":"total_usages","type":"string"}
     ],
     "userModified": true
   },
