@@ -62,15 +62,6 @@
   },
   "schema": {
     "columns": [
-      {"name":"isDev","type":"string","comment":"Indicates if the plugin is in development.","isColumnEdited":true},
-      {"name":"id","type":"string","comment":"Unique identifier for each plugin.","isColumnEdited":true},
-      {"name":"label","type":"string","comment":"Human-readable name of the plugin.","isColumnEdited":true},
-      {"name":"description","type":"string","comment":"Detailed explanation of the plugin\u0027s functionality.","isColumnEdited":true},
-      {"name":"author","type":"string","comment":"Creator or maintainer of the plugin.","isColumnEdited":true},
-      {"name":"tags","type":"string","comment":"Keywords categorizing the plugin\u0027s features.","isColumnEdited":true},
-      {"name":"version","type":"string","comment":"Current version of the plugin.","isColumnEdited":true},
-      {"name":"project_usages","type":"string","comment":"Projects where the plugin is used.","isColumnEdited":true},
-      {"name":"total_usages","type":"string","comment":"Total number of times the plugin is used.","isColumnEdited":true},
       {"name":"projectKey","type":"string","comment":"Unique identifier for each project, key for tracking.","isColumnEdited":true},
       {"name":"ownerLogin","type":"string","comment":"Username of the project owner, indicates administrator.","isColumnEdited":true},
       {"name":"projectLocation","type":"string","comment":"JSON array detailing project hierarchy and location.","isColumnEdited":true},
@@ -79,7 +70,16 @@
       {"name":"projectStatus","type":"string","comment":"Current status of the project, e.g., Sandbox.","isColumnEdited":true},
       {"name":"contributors","type":"string","comment":"JSON array of project contributors, tracks collaboration.","isColumnEdited":true},
       {"name":"lastModifiedOn","type":"string","comment":"Timestamp of last modification, tracks updates.","isColumnEdited":true},
-      {"name":"shortDesc","type":"string","comment":"Free-text description of the project, provides context.","isColumnEdited":true}
+      {"name":"shortDesc","type":"string","comment":"Free-text description of the project, provides context.","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"JSON array of tags for categorization and search.","isColumnEdited":true},
+      {"name":"isDev","type":"string","comment":"Indicates if the plugin is in development.","isColumnEdited":true},
+      {"name":"id","type":"string","comment":"Unique identifier for each plugin.","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Human-readable name of the plugin.","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Detailed explanation of the plugin\u0027s functionality.","isColumnEdited":true},
+      {"name":"author","type":"string","comment":"Creator or maintainer of the plugin.","isColumnEdited":true},
+      {"name":"version","type":"string","comment":"Current version of the plugin.","isColumnEdited":true},
+      {"name":"project_usages","type":"string","comment":"Projects where the plugin is used.","isColumnEdited":true},
+      {"name":"total_usages","type":"string","comment":"Total number of times the plugin is used.","isColumnEdited":true}
     ],
     "userModified": true
   },
