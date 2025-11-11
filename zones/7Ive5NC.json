@@ -1,7 +1,16 @@
 {
   "name": "test1",
   "color": "#465A64",
-  "items": [],
+  "items": [
+    {
+      "objectId": "xzibit_plugins",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "xzibit_projects",
+      "objectType": "DATASET"
+    }
+  ],
   "shared": [],
   "position": {},
   "tags": [],
