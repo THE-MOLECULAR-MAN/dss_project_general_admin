@@ -48,7 +48,8 @@
       {"name":"type","type":"string"},
       {"name":"name","type":"string"},
       {"name":"tags","type":"string"},
-      {"name":"input_datasets","type":"string"}
+      {"name":"input_datasets","type":"string"},
+      {"name":"output_datasets","type":"string"}
     ],
     "userModified": true
   },
