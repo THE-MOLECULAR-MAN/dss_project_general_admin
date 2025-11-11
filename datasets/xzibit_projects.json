@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_projects",
   "managed": false,
   "featureGroup": false,
+  "description": "The xzibit_projects dataset provides a comprehensive overview of various projects, capturing essential details such as project identifiers, ownership, location, and status. This dataset is particularly useful for project management and analysis, allowing users to track project metadata, ownership, and modifications over time. Each project is uniquely identified by a projectKey and is associated with an ownerLogin, indicating the administrator or creator of the project. The projectLocation column provides a hierarchical JSON structure detailing the project\u0027s placement within a broader organizational framework. The dataset also includes a boolean indicator, tutorialProject, to specify if a project is a tutorial. The name and projectStatus columns offer additional descriptive information about each project. Contributors and tags are stored as JSON arrays, allowing for flexible categorization and collaboration tracking. The lastModifiedOn column records the most recent update timestamp, facilitating version control and historical analysis. Finally, the shortDesc column provides a free-text description, offering insights into the project\u0027s purpose and history. This dataset is ideal for organizations looking to manage and analyze their project portfolios effectively.",
+  "shortDesc": "Dataset of project details including ownership, status, and metadata.",
   "checklists": {
     "checklists": []
   },
@@ -44,16 +46,16 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
-      {"name":"ownerLogin","type":"string"},
-      {"name":"projectLocation","type":"string"},
-      {"name":"tutorialProject","type":"string"},
-      {"name":"name","type":"string"},
-      {"name":"projectStatus","type":"string"},
-      {"name":"contributors","type":"string"},
-      {"name":"lastModifiedOn","type":"string"},
-      {"name":"shortDesc","type":"string"},
-      {"name":"tags","type":"string"}
+      {"name":"projectKey","type":"string","comment":"Unique identifier for each project, key for tracking.","isColumnEdited":true},
+      {"name":"ownerLogin","type":"string","comment":"Username of the project owner, indicates administrator.","isColumnEdited":true},
+      {"name":"projectLocation","type":"string","comment":"JSON array detailing project hierarchy and location.","isColumnEdited":true},
+      {"name":"tutorialProject","type":"string","comment":"Boolean indicating if the project is a tutorial.","isColumnEdited":true},
+      {"name":"name","type":"string","comment":"Descriptive name of the project, for identification.","isColumnEdited":true},
+      {"name":"projectStatus","type":"string","comment":"Current status of the project, e.g., Sandbox.","isColumnEdited":true},
+      {"name":"contributors","type":"string","comment":"JSON array of project contributors, tracks collaboration.","isColumnEdited":true},
+      {"name":"lastModifiedOn","type":"string","comment":"Timestamp of last modification, tracks updates.","isColumnEdited":true},
+      {"name":"shortDesc","type":"string","comment":"Free-text description of the project, provides context.","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"JSON array of tags for categorization and search.","isColumnEdited":true}
     ],
     "userModified": true
   },
