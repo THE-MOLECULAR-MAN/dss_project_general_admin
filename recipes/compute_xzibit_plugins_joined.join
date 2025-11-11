@@ -4,82 +4,76 @@
       "table2": 1,
       "table1": 0,
       "conditionsMode": "AND",
+      "rightLimit": {},
       "type": "LEFT",
       "outerJoinOnTheLeft": true,
-      "on": []
+      "on": [
+        {
+          "column1": {
+            "name": "projectKey",
+            "table": 0
+          },
+          "dateDiffUnit": "DAY",
+          "windowFrom": 0,
+          "column2": {
+            "name": "project_usages",
+            "table": 1
+          },
+          "maxMatches": 1,
+          "caseInsensitive": false,
+          "maxDistance": 0,
+          "normalizeText": false,
+          "type": "CONTAINS",
+          "strict": false,
+          "windowTo": 0
+        }
+      ]
     }
   ],
   "selectedColumns": [
     {
       "name": "isDev",
-      "table": 0
+      "type": "string",
+      "table": 1
     },
     {
       "name": "id",
-      "table": 0
+      "type": "string",
+      "table": 1
     },
     {
       "name": "label",
-      "table": 0
+      "type": "string",
+      "table": 1
     },
     {
       "name": "description",
-      "table": 0
+      "type": "string",
+      "table": 1
     },
     {
       "name": "author",
-      "table": 0
+      "type": "string",
+      "table": 1
     },
     {
       "name": "tags",
-      "table": 0
+      "type": "string",
+      "table": 1
     },
     {
       "name": "version",
-      "table": 0
+      "type": "string",
+      "table": 1
     },
     {
       "name": "project_usages",
-      "table": 0
+      "type": "string",
+      "table": 1
     },
     {
       "name": "total_usages",
-      "table": 0
-    },
-    {
-      "name": "projectKey",
-      "table": 1
-    },
-    {
-      "name": "ownerLogin",
-      "table": 1
-    },
-    {
-      "name": "projectLocation",
-      "table": 1
-    },
-    {
-      "name": "tutorialProject",
-      "table": 1
-    },
-    {
-      "name": "name",
-      "table": 1
-    },
-    {
-      "name": "projectStatus",
-      "table": 1
-    },
-    {
-      "name": "contributors",
-      "table": 1
-    },
-    {
-      "name": "lastModifiedOn",
-      "table": 1
-    },
-    {
-      "name": "shortDesc",
+      "type": "string",
       "table": 1
     }
   ],
@@ -124,24 +118,132 @@
   "virtualInputs": [
     {
       "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "xzibit_plugins",
-      "index": 0,
-      "computedColumns": []
+      "preFilter": {},
+      "index": 0
     },
     {
       "outputColumnsSelectionMode": "AUTO_NON_CONFLICTING",
-      "preFilter": {
-        "distinct": false,
-        "enabled": false
-      },
-      "originLabel": "xzibit_projects",
-      "index": 1,
-      "computedColumns": []
+      "preFilter": {},
+      "index": 1
     }
   ],
+  "computedColumns": [],
+  "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "isColumnEdited": true,
+            "name": "projectKey",
+            "comment": "Unique identifier for each project, key for tracking.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "ownerLogin",
+            "comment": "Username of the project owner, indicates administrator.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "projectLocation",
+            "comment": "JSON array detailing project hierarchy and location.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "tutorialProject",
+            "comment": "Boolean indicating if the project is a tutorial.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "name",
+            "comment": "Descriptive name of the project, for identification.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "projectStatus",
+            "comment": "Current status of the project, e.g., Sandbox.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "contributors",
+            "comment": "JSON array of project contributors, tracks collaboration.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "lastModifiedOn",
+            "comment": "Timestamp of last modification, tracks updates.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "shortDesc",
+            "comment": "Free-text description of the project, provides context.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "tags",
+            "comment": "JSON array of tags for categorization and search.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "isDev",
+            "comment": "Indicates if the plugin is in development.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "id",
+            "comment": "Unique identifier for each plugin.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "label",
+            "comment": "Human-readable name of the plugin.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "description",
+            "comment": "Detailed explanation of the plugin\u0027s functionality.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "author",
+            "comment": "Creator or maintainer of the plugin.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "version",
+            "comment": "Current version of the plugin.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "project_usages",
+            "comment": "Projects where the plugin is used.",
+            "type": "string"
+          },
+          {
+            "isColumnEdited": true,
+            "name": "total_usages",
+            "comment": "Total number of times the plugin is used.",
+            "type": "string"
+          }
+        ],
+        "userModified": false
+      }
+    }
+  },
   "enableAutoCastInJoinConditions": false
 }

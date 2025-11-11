@@ -13,11 +13,11 @@
     "main": {
       "items": [
         {
-          "ref": "xzibit_plugins",
+          "ref": "xzibit_projects",
           "deps": []
         },
         {
-          "ref": "xzibit_projects",
+          "ref": "xzibit_plugins",
           "deps": []
         }
       ]
