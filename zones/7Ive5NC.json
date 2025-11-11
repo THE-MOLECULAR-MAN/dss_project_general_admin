@@ -9,6 +9,14 @@
     {
       "objectId": "xzibit_projects",
       "objectType": "DATASET"
+    },
+    {
+      "objectId": "compute_xzibit_plugins_joined",
+      "objectType": "RECIPE"
+    },
+    {
+      "objectId": "xzibit_plugins_joined",
+      "objectType": "DATASET"
     }
   ],
   "shared": [],
