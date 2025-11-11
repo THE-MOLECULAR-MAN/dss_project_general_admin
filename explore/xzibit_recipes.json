@@ -24,6 +24,10 @@
         {
           "name": "input_datasets",
           "d": true
+        },
+        {
+          "name": "output_datasets",
+          "d": true
         }
       ]
     },
@@ -33,7 +37,8 @@
       "type": 204,
       "name": 300,
       "tags": 232,
-      "input_datasets": 300
+      "input_datasets": 60,
+      "output_datasets": 300
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -45,7 +50,7 @@
     },
     "sorting": [
       {
-        "column": "input_datasets",
+        "column": "output_datasets",
         "ascending": true
       }
     ],
