@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_connections",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027xzibit_connections\u0027 dataset provides a comprehensive overview of various system connections, detailing their types, permissions, and access controls. This dataset is particularly useful for IT administrators and system architects who need to manage and audit connections within a networked environment. Each entry in the dataset represents a unique connection, identified by its name, and includes information about the type of connection, such as whether it is a Vertex AI model deployment, a PostgreSQL database, or a filesystem. The dataset also specifies whether write operations are allowed on the connection, which is crucial for maintaining data integrity and security. Additionally, it includes fields for credential modes and usability, indicating how the connection can be accessed and by whom. The dataset further provides details on access control, listing allowed groups for both general access and detailed readability. This structured information aids in ensuring that connections are used appropriately and securely, aligning with organizational policies and compliance requirements.",
+  "shortDesc": "Dataset of system connections with types, permissions, and access groups.",
   "checklists": {
     "checklists": []
   },
@@ -44,13 +46,13 @@
   },
   "schema": {
     "columns": [
-      {"name":"name","type":"string"},
-      {"name":"type","type":"string"},
-      {"name":"allowWrite","type":"string"},
-      {"name":"credentialsMode","type":"string"},
-      {"name":"usableBy","type":"string"},
-      {"name":"allowedGroups","type":"string"},
-      {"name":"detailsReadability.allowedGroups","type":"string"}
+      {"name":"name","type":"string","comment":"Connection identifier; includes system and user keywords.","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Type of connection; includes system type keywords.","isColumnEdited":true},
+      {"name":"allowWrite","type":"string","comment":"Permission for write operations; indicates access level.","isColumnEdited":true},
+      {"name":"credentialsMode","type":"string","comment":"Mode of credential usage; indicates security level.","isColumnEdited":true},
+      {"name":"usableBy","type":"string","comment":"Usability scope; indicates who can use the connection.","isColumnEdited":true},
+      {"name":"allowedGroups","type":"string","comment":"Groups with access; controls connection permissions.","isColumnEdited":true},
+      {"name":"detailsReadability.allowedGroups","type":"string","comment":"Groups with detailed access; controls data visibility.","isColumnEdited":true}
     ],
     "userModified": true
   },
