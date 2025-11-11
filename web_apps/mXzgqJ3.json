@@ -51,14 +51,15 @@
     "ai_generate_sql_llm_id_advanced_parameters": {},
     "ai_explanations_llm_id_advanced_parameters": {},
     "text2story_llm_id_advanced_parameters": {},
-    "logging_level": "ERROR",
+    "logging_level": "DEBUG",
     "prepare_ai_completion_llm_id": "openai:OpenAI_Shared_SE:gpt-4o",
     "ai_generate_sql_llm_id": "openai:OpenAI_Shared_SE:gpt-4o",
     "ai_explanations_llm_id": "openai:OpenAI_Shared_SE:gpt-4o",
-    "text2story_llm_id": "openai:OpenAI_Shared_SE:gpt-4o"
+    "text2story_llm_id": "openai:OpenAI_Shared_SE:gpt-4o",
+    "text2image_llm_id": "openai:OpenAI_Shared_SE:dall-e-3"
   },
   "name": "AI services on the LLM Mesh",
-  "apiKey": "e:AES:X2:q/Aedhco34U4v9WzdGgkDxfB85zIRGAg9RA0YaIia0cgzhYxzo6sjlUI+P3sGz0GhSi/6guEeKk/sWO1Rafkh6XLRHnzWSW48TvwPci3rCw8oYorNHoj",
+  "apiKey": "e:AES:X2:Kuo7H7JcRiZpR8GVbv8aUD0X2aiEy0fFhRzTZhmfd4P+VABNyjU6xnctr3C9IGKe7szb6gFWEJ/s6Eotdj/cJhay180aWohSwpN4vNCGoIhIFjbwW8SI",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
