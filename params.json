@@ -9,11 +9,11 @@
   "projectType": "REGULAR",
   "projectAppType": "REGULAR",
   "hasSetupSection": false,
-  "owner": "techacct",
+  "owner": "admin",
   "permissionsVersion": "V2",
   "permissions": [
     {
-      "user": "admin",
+      "user": "techacct",
       "admin": true,
       "editPermissions": false,
       "readProjectContent": false,
