@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_plugins",
   "managed": false,
   "featureGroup": false,
+  "description": "The xzibit_plugins dataset provides detailed information about various plugins available in the Xzibit platform. Each entry in the dataset represents a plugin, capturing essential metadata such as its development status, unique identifier, descriptive label, and a comprehensive description of its functionality. The dataset also includes information about the author of each plugin, which can be useful for understanding the source and credibility of the plugin. Additionally, the dataset tracks the version of each plugin, which is crucial for version control and ensuring compatibility with other software components. Tags associated with each plugin help categorize them into relevant topics or functionalities, aiding in quick identification and retrieval. The dataset also records the usage of each plugin across different projects, providing insights into their popularity and application. The total number of usages is also tracked, offering a quantitative measure of each plugin\u0027s adoption. This dataset is particularly useful for developers, project managers, and analysts who need to manage, evaluate, or select plugins based on their features, authorship, and usage metrics.",
+  "shortDesc": "Dataset of Xzibit plugins with metadata and usage statistics.",
   "checklists": {
     "checklists": []
   },
@@ -44,15 +46,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"isDev","type":"string"},
-      {"name":"id","type":"string"},
-      {"name":"label","type":"string"},
-      {"name":"description","type":"string"},
-      {"name":"author","type":"string"},
-      {"name":"tags","type":"string"},
-      {"name":"version","type":"string"},
-      {"name":"project_usages","type":"string"},
-      {"name":"total_usages","type":"string"}
+      {"name":"isDev","type":"string","comment":"Indicates if the plugin is in development.","isColumnEdited":true},
+      {"name":"id","type":"string","comment":"Unique identifier for each plugin.","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Human-readable name of the plugin.","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Detailed explanation of the plugin\u0027s functionality.","isColumnEdited":true},
+      {"name":"author","type":"string","comment":"Creator or maintainer of the plugin.","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Keywords categorizing the plugin\u0027s features.","isColumnEdited":true},
+      {"name":"version","type":"string","comment":"Current version of the plugin.","isColumnEdited":true},
+      {"name":"project_usages","type":"string","comment":"Projects where the plugin is used.","isColumnEdited":true},
+      {"name":"total_usages","type":"string","comment":"Total number of times the plugin is used.","isColumnEdited":true}
     ],
     "userModified": true
   },
