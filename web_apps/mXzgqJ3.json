@@ -4,7 +4,7 @@
   "params": {
     "backendEnabled": true,
     "enableJavascriptModules": true,
-    "autoStartBackend": false,
+    "autoStartBackend": true,
     "hideJSSecurityPanel": true,
     "hideWebAppConfig": false,
     "envSelection": {
@@ -14,6 +14,7 @@
     "backendAPIAccessEnabled": false,
     "backendFramework": "FLASK",
     "libraries": [],
+    "runAs": "techacct",
     "infra": {
       "containerSelection": {
         "containerMode": "INHERIT"
@@ -43,7 +44,7 @@
         "config": {}
       }
     },
-    "forceAuthentication": false
+    "forceAuthentication": true
   },
   "config": {
     "prepare_ai_completion_llm_id_advanced_parameters": {},
@@ -57,7 +58,7 @@
     "text2story_llm_id": "openai:OpenAI_Shared_SE:gpt-4o"
   },
   "name": "AI services on the LLM Mesh",
-  "apiKey": "e:AES:X2:Tq5n6uuin+wjHna+er0EPrYuCuB4XxO+ad5e2dGeA9PJ1NVgRdg4+PHUM7c+Q6THOFPj7IPKyLXskLiHJXPlE7Dxvbv7muSbGqWxgvuFhl4oNSpNub7e",
+  "apiKey": "e:AES:X2:q/Aedhco34U4v9WzdGgkDxfB85zIRGAg9RA0YaIia0cgzhYxzo6sjlUI+P3sGz0GhSi/6guEeKk/sWO1Rafkh6XLRHnzWSW48TvwPci3rCw8oYorNHoj",
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
