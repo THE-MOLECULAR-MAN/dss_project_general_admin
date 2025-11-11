@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_apps",
   "managed": false,
   "featureGroup": false,
+  "description": "The xzibit_apps dataset provides detailed information about various machine learning-assisted labeling applications. Each entry in the dataset represents an application, capturing essential metadata and usage characteristics. This dataset is particularly useful for developers and data scientists who are interested in understanding the deployment and characteristics of these applications. Key features include the application ID, version, and descriptive labels, which help in identifying and categorizing the apps. The dataset also includes information about the visibility and usage of the applications, such as whether they are limited in visibility, used as a recipe, or have associated images. Additionally, the dataset tracks the origin of the application and the number of instances deployed, providing insights into the application\u0027s reach and usage. The short descriptions offer a narrative about the creation and purpose of each app, enhancing the understanding of its functionality. This dataset is valuable for managing and analyzing the deployment of machine learning tools in various environments, facilitating better decision-making and optimization of resources.",
+  "shortDesc": "Dataset of ML-assisted labeling apps with metadata and usage details.",
   "checklists": {
     "checklists": []
   },
@@ -44,16 +46,16 @@
   },
   "schema": {
     "columns": [
-      {"name":"onlyLimitedVisibility","type":"string"},
-      {"name":"appId","type":"string"},
-      {"name":"appVersion","type":"string"},
-      {"name":"label","type":"string"},
-      {"name":"shortDesc","type":"string"},
-      {"name":"tags","type":"string"},
-      {"name":"isAppImg","type":"string"},
-      {"name":"origin","type":"string"},
-      {"name":"instanceCount","type":"string"},
-      {"name":"useAsRecipe","type":"string"}
+      {"name":"onlyLimitedVisibility","type":"string","comment":"Indicates if app has limited visibility, boolean value.","isColumnEdited":true},
+      {"name":"appId","type":"string","comment":"Unique identifier for the application, includes plugin name.","isColumnEdited":true},
+      {"name":"appVersion","type":"string","comment":"Version information of the application, often \u0027N/A\u0027.","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Descriptive label for the application, free text.","isColumnEdited":true},
+      {"name":"shortDesc","type":"string","comment":"Detailed description of the app, includes creation info.","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags associated with the app, stored as JSON array.","isColumnEdited":true},
+      {"name":"isAppImg","type":"string","comment":"Indicates if app has an associated image, boolean value.","isColumnEdited":true},
+      {"name":"origin","type":"string","comment":"Source or origin of the application, often \u0027PLUGIN\u0027.","isColumnEdited":true},
+      {"name":"instanceCount","type":"string","comment":"Number of instances of the app deployed, integer value.","isColumnEdited":true},
+      {"name":"useAsRecipe","type":"string","comment":"Indicates if app can be used as a recipe, boolean value.","isColumnEdited":true}
     ],
     "userModified": true
   },
