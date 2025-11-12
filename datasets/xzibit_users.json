@@ -53,8 +53,7 @@
       {"name":"creationDate","type":"string"},
       {"name":"enabled","type":"string"},
       {"name":"resultingUserProfile","type":"string"},
-      {"name":"last_successful_login","type":"string"},
-      {"name":"last_session_activity","type":"string"}
+      {"name":"last_successful_login","type":"string"}
     ],
     "userModified": true
   },
