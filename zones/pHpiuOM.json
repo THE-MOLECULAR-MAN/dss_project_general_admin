@@ -11,10 +11,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "xzibit_codeenvs_copy_by_envName2",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "xzibit_recipes",
       "objectType": "DATASET"
     },
@@ -48,6 +44,10 @@
     },
     {
       "objectId": "code_env_PSQL",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "Code_Env_Summary",
       "objectType": "DATASET"
     }
   ],
