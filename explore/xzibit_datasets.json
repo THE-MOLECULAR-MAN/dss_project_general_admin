@@ -57,6 +57,10 @@
       "mode": "ALL",
       "list": [
         {
+          "name": "projectKey",
+          "d": true
+        },
+        {
           "name": "name",
           "d": true
         },
@@ -65,31 +69,15 @@
           "d": true
         },
         {
-          "name": "tags",
-          "d": true
-        },
-        {
-          "name": "description",
-          "d": true
-        },
-        {
-          "name": "featureGroup",
-          "d": true
-        },
-        {
-          "name": "managed",
-          "d": true
-        },
-        {
           "name": "formatType",
           "d": true
         },
         {
-          "name": "projectKey",
+          "name": "params.connection",
           "d": true
         },
         {
-          "name": "params.connection",
+          "name": "managed",
           "d": true
         },
         {
@@ -101,19 +89,7 @@
           "d": true
         },
         {
-          "name": "shortDesc",
-          "d": true
-        },
-        {
-          "name": "versionTag.lastModifiedBy.login",
-          "d": true
-        },
-        {
-          "name": "versionTag.lastModifiedBy.lastModifiedOn",
-          "d": true
-        },
-        {
-          "name": "creationTag.lastModifiedOn",
+          "name": "params.path",
           "d": true
         },
         {
@@ -121,7 +97,35 @@
           "d": true
         },
         {
-          "name": "params.path",
+          "name": "creationTag.lastModifiedOn",
+          "d": true
+        },
+        {
+          "name": "versionTag.lastModifiedBy.login",
+          "d": true
+        },
+        {
+          "name": "versionTag.lastModifiedOn",
+          "d": true
+        },
+        {
+          "name": "shortDesc",
+          "d": true
+        },
+        {
+          "name": "description",
+          "d": true
+        },
+        {
+          "name": "params.folderSmartId",
+          "d": true
+        },
+        {
+          "name": "tags",
+          "d": true
+        },
+        {
+          "name": "featureGroup",
           "d": true
         },
         {
@@ -130,6 +134,10 @@
         },
         {
           "name": "num_columns",
+          "d": true
+        },
+        {
+          "name": "column_names",
           "d": true
         }
       ]
@@ -154,7 +162,10 @@
       "creationTag.lastModifiedBy.login": 255,
       "params.path": 300,
       "num_metrics_checks": 150,
-      "num_columns": 100
+      "num_columns": 100,
+      "versionTag.lastModifiedOn": 203,
+      "params.folderSmartId": 165,
+      "column_names": 300
     },
     "columnUseScientificNotationByName": {},
     "coloring": {
@@ -189,7 +200,7 @@
         "maxReadUncompressedBytes": -1
       },
       "autoRefreshSample": false,
-      "_refreshTrigger": 0
+      "_refreshTrigger": 1762974938506
     },
     "vizSampling": {
       "selection": {
