@@ -57,7 +57,6 @@
       {"name":"params.table","type":"string"},
       {"name":"shortDesc","type":"string"},
       {"name":"versionTag.lastModifiedBy.login","type":"string"},
-      {"name":"versionTag.lastModifiedBy.lastModifiedOn","type":"string"},
       {"name":"creationTag.lastModifiedOn","type":"string"},
       {"name":"creationTag.lastModifiedBy.login","type":"string"},
       {"name":"params.path","type":"string"},
