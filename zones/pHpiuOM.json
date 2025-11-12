@@ -23,10 +23,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "xzibit_connections",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "xzibit_recipes",
       "objectType": "DATASET"
     },
@@ -48,6 +44,10 @@
     },
     {
       "objectId": "apps",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "connections",
       "objectType": "DATASET"
     }
   ],
