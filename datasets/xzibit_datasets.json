@@ -44,13 +44,14 @@
   },
   "schema": {
     "columns": [
-      {"name":"projectKey","type":"string"},
-      {"name":"id","type":"string"},
-      {"name":"type","type":"string"},
       {"name":"name","type":"string"},
-      {"name":"formatType","type":"string"},
-      {"name":"managed","type":"string"},
-      {"name":"tags","type":"string"}
+      {"name":"type","type":"string"},
+      {"name":"tags","type":"string"},
+      {"name":"projectKey","type":"string"},
+      {"name":"params.connection","type":"string"},
+      {"name":"creationTag.lastModifiedOn","type":"string"},
+      {"name":"creationTag.lastModifiedBy.login","type":"string"},
+      {"name":"params.path","type":"string"}
     ],
     "userModified": true
   },
