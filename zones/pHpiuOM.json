@@ -45,10 +45,6 @@
     {
       "objectId": "Code_Env_Summary",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "xzibit_datasets",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
