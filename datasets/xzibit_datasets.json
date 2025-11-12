@@ -59,7 +59,7 @@
       {"name":"versionTag.lastModifiedOn","type":"string"},
       {"name":"shortDesc","type":"string"},
       {"name":"description","type":"string"},
-      {"name":"params.folderSmartId","type":"string"},
+      {"name":"params.metastoreDatabaseNameparams.folderSmartId","type":"string"},
       {"name":"tags","type":"string"},
       {"name":"featureGroup","type":"string"},
       {"name":"num_metrics_checks","type":"string"},
