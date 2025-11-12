@@ -9,78 +9,9 @@
     },
     {
       "column": "name"
-    },
-    {
-      "column": "type"
-    },
-    {
-      "column": "formatType"
-    },
-    {
-      "column": "params.connection"
-    },
-    {
-      "column": "managed"
-    },
-    {
-      "column": "params.mode"
-    },
-    {
-      "column": "params.table"
-    },
-    {
-      "column": "params.schema"
-    },
-    {
-      "column": "params.database"
-    },
-    {
-      "column": "params.path"
-    },
-    {
-      "column": "creationTag.lastModifiedBy.login"
-    },
-    {
-      "column": "creationTag.lastModifiedOn"
-    },
-    {
-      "column": "versionTag.lastModifiedBy.login"
-    },
-    {
-      "column": "versionTag.lastModifiedOn"
-    },
-    {
-      "column": "shortDesc"
-    },
-    {
-      "column": "description"
-    },
-    {
-      "column": "params.metastoreDatabaseName"
-    },
-    {
-      "column": "params.folderSmartId"
-    },
-    {
-      "column": "tags"
-    },
-    {
-      "column": "featureGroup"
-    },
-    {
-      "column": "num_metrics_checks"
-    },
-    {
-      "column": "num_columns"
-    },
-    {
-      "column": "column_names"
-    },
-    {
-      "column": "dataset_exists"
     }
   ],
-  "globalCount": false,
+  "globalCount": true,
   "engineParams": {
     "hive": {
       "skipPrerunValidate": false,
@@ -121,6 +52,25 @@
   "outputColumnNameOverrides": {},
   "selectAllColumns": false,
   "postFilter": {
+    "$status": {
+      "schema": {
+        "columns": [
+          {
+            "name": "projectKey",
+            "type": "string"
+          },
+          {
+            "name": "name",
+            "type": "string"
+          },
+          {
+            "name": "count",
+            "type": "bigint"
+          }
+        ],
+        "userModified": false
+      }
+    },
     "distinct": false,
     "enabled": false
   }
