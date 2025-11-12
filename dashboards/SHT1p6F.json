@@ -211,10 +211,12 @@
     "isBuiltIn": true
   },
   "showGrid": false,
+  "autoStackUp": false,
   "columnNumber": 36,
   "showNavigationArrows": false,
   "reloadWhenEventReceived": false,
   "tileSpacing": 8,
+  "circularNavigation": false,
   "creationTag": {
     "versionNumber": 0,
     "lastModifiedBy": {
