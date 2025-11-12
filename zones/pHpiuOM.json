@@ -39,15 +39,15 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "xzibit_apps",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "xzibit_projects",
       "objectType": "DATASET"
     },
     {
       "objectId": "code_environments",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "apps",
       "objectType": "DATASET"
     }
   ],
