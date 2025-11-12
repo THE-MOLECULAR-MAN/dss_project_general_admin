@@ -19,10 +19,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "xzibit_users",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "xzibit_recipes",
       "objectType": "DATASET"
     },
@@ -48,6 +44,10 @@
     },
     {
       "objectId": "projects",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "users",
       "objectType": "DATASET"
     }
   ],
