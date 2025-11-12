@@ -27,10 +27,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "xzibit_clusters",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "xzibit_projects",
       "objectType": "DATASET"
     },
@@ -48,6 +44,10 @@
     },
     {
       "objectId": "plugins",
+      "objectType": "DATASET"
+    },
+    {
+      "objectId": "clusters",
       "objectType": "DATASET"
     }
   ],
