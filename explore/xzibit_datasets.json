@@ -1,0 +1,209 @@
+{
+  "script": {
+    "steps": [],
+    "maxProcessedMemTableBytes": -1,
+    "columnsSelection": {
+      "mode": "ALL",
+      "list": [
+        {
+          "name": "projectKey",
+          "d": true
+        },
+        {
+          "name": "name",
+          "d": true
+        },
+        {
+          "name": "type",
+          "d": true
+        },
+        {
+          "name": "formatType",
+          "d": true
+        },
+        {
+          "name": "params.connection",
+          "d": true
+        },
+        {
+          "name": "managed",
+          "d": true
+        },
+        {
+          "name": "params.mode",
+          "d": true
+        },
+        {
+          "name": "params.table",
+          "d": true
+        },
+        {
+          "name": "params.schema",
+          "d": true
+        },
+        {
+          "name": "params.database",
+          "d": true
+        },
+        {
+          "name": "params.path",
+          "d": true
+        },
+        {
+          "name": "creationTag.lastModifiedBy.login",
+          "d": true
+        },
+        {
+          "name": "creationTag.lastModifiedOn",
+          "d": true
+        },
+        {
+          "name": "versionTag.lastModifiedBy.login",
+          "d": true
+        },
+        {
+          "name": "versionTag.lastModifiedOn",
+          "d": true
+        },
+        {
+          "name": "shortDesc",
+          "d": true
+        },
+        {
+          "name": "description",
+          "d": true
+        },
+        {
+          "name": "params.metastoreDatabaseName",
+          "d": true
+        },
+        {
+          "name": "params.folderSmartId",
+          "d": true
+        },
+        {
+          "name": "tags",
+          "d": true
+        },
+        {
+          "name": "featureGroup",
+          "d": true
+        },
+        {
+          "name": "num_metrics_checks",
+          "d": true
+        },
+        {
+          "name": "num_columns",
+          "d": true
+        },
+        {
+          "name": "column_names",
+          "d": true
+        },
+        {
+          "name": "dataset_exists",
+          "d": true
+        }
+      ]
+    },
+    "columnOrder": [],
+    "columnWidthsByName": {
+      "projectKey": 239,
+      "name": 300,
+      "type": 204,
+      "formatType": 100,
+      "params.connection": 239,
+      "managed": 100,
+      "params.mode": 100,
+      "params.table": 211,
+      "params.schema": 113,
+      "params.database": 128,
+      "params.path": 300,
+      "creationTag.lastModifiedBy.login": 255,
+      "creationTag.lastModifiedOn": 232,
+      "versionTag.lastModifiedBy.login": 248,
+      "versionTag.lastModifiedOn": 225,
+      "shortDesc": 300,
+      "description": 300,
+      "params.metastoreDatabaseName": 225,
+      "params.folderSmartId": 165,
+      "tags": 232,
+      "featureGroup": 105,
+      "num_metrics_checks": 150,
+      "num_columns": 100,
+      "column_names": 300,
+      "dataset_exists": 120
+    },
+    "columnUseScientificNotationByName": {},
+    "coloring": {
+      "scheme": "MEANING_AND_STATUS",
+      "individualColumns": [],
+      "individualColumnsRules": [],
+      "valueColoringMode": "HASH",
+      "coloringGroups": []
+    },
+    "sorting": [],
+    "analysisColumnData": {},
+    "explorationSampling": {
+      "selection": {
+        "maxRecordsForDisplay": -1,
+        "maxStoredBytes": 104857600,
+        "timeout": -1,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "HEAD_SEQUENTIAL",
+        "maxRecords": 10000,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "vizSampling": {
+      "selection": {
+        "useMemTable": false,
+        "filter": {
+          "distinct": false,
+          "enabled": false
+        },
+        "partitionSelectionMethod": "ALL",
+        "latestPartitionsN": 1,
+        "ordering": {
+          "enabled": false,
+          "rules": []
+        },
+        "samplingMethod": "FULL",
+        "maxRecords": -1,
+        "targetRatio": 0.02,
+        "ascending": true,
+        "withinFirstN": -1,
+        "maxReadUncompressedBytes": -1
+      },
+      "autoRefreshSample": false,
+      "_refreshTrigger": 0
+    },
+    "exploreUIParams": {
+      "autoRefresh": true
+    },
+    "globalSearchQuery": "",
+    "explorationFilters": [],
+    "previewMode": "ALL_ROWS"
+  },
+  "charts": [],
+  "interactiveSearch": {
+    "savedQueries": []
+  },
+  "customMeasures": [],
+  "reusableDimensions": []
+}
