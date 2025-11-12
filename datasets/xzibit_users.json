@@ -44,15 +44,17 @@
   },
   "schema": {
     "columns": [
-      {"name":"login","type":"string","meaning":"Text"},
+      {"name":"login","type":"string"},
       {"name":"sourceType","type":"string"},
-      {"name":"displayName","type":"string","meaning":"Text"},
+      {"name":"displayName","type":"string"},
       {"name":"groups","type":"string"},
       {"name":"email","type":"string"},
       {"name":"userProfile","type":"string"},
       {"name":"creationDate","type":"string"},
       {"name":"enabled","type":"string"},
-      {"name":"resultingUserProfile","type":"string"}
+      {"name":"resultingUserProfile","type":"string"},
+      {"name":"last_successful_login","type":"string"},
+      {"name":"last_session_activity","type":"string"}
     ],
     "userModified": true
   },
