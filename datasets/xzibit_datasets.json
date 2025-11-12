@@ -61,8 +61,10 @@
       {"name":"creationTag.lastModifiedOn","type":"string"},
       {"name":"creationTag.lastModifiedBy.login","type":"string"},
       {"name":"params.path","type":"string"},
+      {"name":"params.folderSmartId","type":"string"},
       {"name":"num_metrics_checks","type":"string"},
-      {"name":"num_columns","type":"string"}
+      {"name":"num_columns","type":"string"},
+      {"name":"column_names","type":"string"}
     ],
     "userModified": true
   },
