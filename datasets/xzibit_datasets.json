@@ -46,7 +46,13 @@
     "columns": [
       {"name":"projectKey","type":"string"},
       {"name":"id","type":"string"},
-      {"name":"name","type":"string"}
+      {"name":"type","type":"string"},
+      {"name":"name","type":"string"},
+      {"name":"is_feature_group","type":"string"},
+      {"name":"data_steward","type":"string"},
+      {"name":"formatType","type":"string"},
+      {"name":"managed","type":"string"},
+      {"name":"tags","type":"string"}
     ],
     "userModified": true
   },
