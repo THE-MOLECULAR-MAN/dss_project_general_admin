@@ -11,10 +11,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "xzibit_recipes",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "code_environments",
       "objectType": "DATASET"
     },
