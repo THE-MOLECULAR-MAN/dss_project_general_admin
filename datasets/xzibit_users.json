@@ -44,7 +44,7 @@
   },
   "schema": {
     "columns": [
-      {"name":"login","type":"string"},
+      {"name":"login","type":"string","meaning":"Text"},
       {"name":"sourceType","type":"string"},
       {"name":"displayName","type":"string","meaning":"Text"},
       {"name":"groups","type":"string"},
