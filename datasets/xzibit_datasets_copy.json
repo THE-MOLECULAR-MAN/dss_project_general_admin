@@ -75,7 +75,7 @@
       {"name":"params.schema","type":"string","comment":"Schema details for the dataset.","isColumnEdited":true},
       {"name":"params.database","type":"string","comment":"Database name associated with the dataset.","isColumnEdited":true},
       {"name":"params.path","type":"string","comment":"File path pattern for dataset storage.","isColumnEdited":true},
-      {"name":"creationTag.lastModifiedBy.login","type":"string","comment":"Email of the last person who modified the dataset.","isColumnEdited":true},
+      {"name":"creationTag.lastModifiedBy.login","type":"string","comment":"Email of the last person who modified the dataset.","meaning":"Text","isColumnEdited":true},
       {"name":"creationTag.lastModifiedOn","type":"string","comment":"Timestamp of the last modification.","isColumnEdited":true},
       {"name":"versionTag.lastModifiedBy.login","type":"string","comment":"Email of the last person who modified the version.","isColumnEdited":true},
       {"name":"versionTag.lastModifiedOn","type":"string","comment":"Timestamp of the last version modification.","isColumnEdited":true},
