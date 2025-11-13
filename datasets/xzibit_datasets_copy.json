@@ -168,7 +168,40 @@
   },
   "metricsChecks": {
     "monitor": false,
-    "checks": [],
+    "checks": [
+      {
+        "type": "RecordCountInRangeRule",
+        "minimum": 1.0,
+        "minimumEnabled": true,
+        "maximum": 0.0,
+        "maximumEnabled": false,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "l9OOMFnf",
+        "displayName": "At least 1 row",
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "autoRun": true,
+        "enabled": true
+      },
+      {
+        "type": "ColumnCountInRangeRule",
+        "minimum": 3.0,
+        "minimumEnabled": true,
+        "maximum": 50.0,
+        "maximumEnabled": true,
+        "softMinimum": 0.0,
+        "softMinimumEnabled": false,
+        "softMaximum": 0.0,
+        "softMaximumEnabled": false,
+        "id": "nCwqofU3",
+        "displayName": "3-50 columns",
+        "computeOnBuildMode": "WHOLE_DATASET",
+        "autoRun": true,
+        "enabled": true
+      }
+    ],
     "displayedState": {
       "checks": []
     }
