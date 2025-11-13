@@ -1,10 +1,28 @@
 {
   "dashboardAuthorizations": {
     "allAuthorized": false,
-    "authorizations": []
+    "authorizations": [
+      {
+        "objectRef": {
+          "objectId": "xzibit_datasets_copy",
+          "objectType": "DATASET"
+        },
+        "modes": [
+          "DISCOVER",
+          "READ"
+        ]
+      }
+    ]
   },
   "exposedObjects": {
-    "objects": []
+    "objects": [
+      {
+        "type": "DATASET",
+        "localName": "xzibit_datasets_copy",
+        "quickSharingEnabled": true,
+        "rules": []
+      }
+    ]
   },
   "projectType": "REGULAR",
   "projectAppType": "REGULAR",
