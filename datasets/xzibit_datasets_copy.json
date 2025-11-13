@@ -2,8 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
-  "description": "The xzibit_datasets_copy dataset is designed to manage and analyze various employee-related data projects. It includes comprehensive information about different datasets, their types, formats, and associated metadata. This dataset is particularly useful for data scientists and HR professionals who are involved in data management, analysis, and reporting. It provides insights into project keys, dataset names, types, and formats, which are essential for organizing and accessing data efficiently. Additionally, it includes parameters related to connections, modes, tables, schemas, and paths, which are crucial for data integration and processing. The dataset also tracks metadata such as creation and modification details, which help in maintaining data versioning and audit trails. With features like sentiment analysis and attrition prediction, this dataset supports advanced HR analytics, enabling organizations to understand employee behavior and improve retention strategies. Overall, the xzibit_datasets_copy dataset serves as a valuable resource for managing complex data projects, ensuring data consistency, and facilitating informed decision-making in HR and organizational development.",
-  "shortDesc": "Dataset for managing and analyzing employee data projects.",
+  "description": "The xzibit_datasets_copy dataset is designed to manage and describe various data projects, providing detailed metadata and access information. It includes unique identifiers for each project and dataset, as well as information about the data source, format, and storage. This dataset is particularly useful for data engineers and project managers who need to keep track of multiple datasets across different projects. It provides insights into the management status, connection details, and access modes, which are crucial for maintaining data integrity and accessibility. Additionally, it includes metadata such as the last modification details, which help in auditing and version control. The dataset also supports HR analytics by offering detailed descriptions of datasets related to employee attrition and sentiment analysis, making it valuable for organizations aiming to improve employee retention and satisfaction. Overall, this dataset serves as a comprehensive tool for managing data projects, ensuring efficient data handling and facilitating strategic decision-making.",
+  "shortDesc": "Dataset for managing data projects with metadata and access details.",
   "checklists": {
     "checklists": []
   },
@@ -65,9 +65,9 @@
   "schema": {
     "columns": [
       {"name":"projectKey","type":"string","comment":"Unique identifier for each data project.","isColumnEdited":true},
-      {"name":"id","type":"string"},
+      {"name":"id","type":"string","comment":"Unique identifier for the dataset.","isColumnEdited":true},
       {"name":"name","type":"string","comment":"Name of the dataset within the project.","isColumnEdited":true},
-      {"name":"exists","type":"string"},
+      {"name":"exists","type":"string","comment":"Indicates if the dataset exists.","isColumnEdited":true},
       {"name":"type","type":"string","comment":"Type of data source or storage used.","isColumnEdited":true},
       {"name":"formatType","type":"string","comment":"File format of the dataset, e.g., csv, avro.","isColumnEdited":true},
       {"name":"params.connection","type":"string","comment":"Connection details for data access.","isColumnEdited":true},
