@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_plugins",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027plugins\u0027 dataset provides comprehensive information about various plugins, including their development status, identification, and usage metrics. Each entry in the dataset represents a plugin, detailing whether it is in development (isDev), its unique identifier (id), and a descriptive label. The dataset also includes a detailed description of each plugin\u0027s functionality, which can range from geospatial analysis to text preparation and cloud vision tasks. Additionally, the dataset records the author or authors responsible for each plugin, offering insight into the creators behind these tools. Tags associated with each plugin provide a quick reference to its thematic or functional categories, such as \u0027NLP\u0027 or \u0027Geospatial\u0027. The version column indicates the current version of the plugin, while project_usages and total_usages columns provide data on how frequently and in which projects the plugins are utilized. This dataset is particularly useful for developers and data scientists looking to understand the landscape of available plugins, their applications, and their popularity within different projects.",
+  "shortDesc": "Dataset of plugins with details on development, usage, and authorship.",
   "checklists": {
     "checklists": []
   },
@@ -44,15 +46,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"isDev","type":"string"},
-      {"name":"id","type":"string"},
-      {"name":"label","type":"string"},
-      {"name":"description","type":"string"},
-      {"name":"author","type":"string"},
-      {"name":"tags","type":"string"},
-      {"name":"version","type":"string"},
-      {"name":"project_usages","type":"string"},
-      {"name":"total_usages","type":"string"}
+      {"name":"isDev","type":"string","comment":"Indicates if the plugin is in development.","isColumnEdited":true},
+      {"name":"id","type":"string","comment":"Unique identifier for each plugin.","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Descriptive name of the plugin.","isColumnEdited":true},
+      {"name":"description","type":"string","comment":"Detailed explanation of plugin functionality.","isColumnEdited":true},
+      {"name":"author","type":"string","comment":"Creator or creators of the plugin.","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Keywords categorizing the plugin\u0027s themes.","isColumnEdited":true},
+      {"name":"version","type":"string","comment":"Current version of the plugin.","isColumnEdited":true},
+      {"name":"project_usages","type":"string","comment":"Projects where the plugin is used.","isColumnEdited":true},
+      {"name":"total_usages","type":"string","comment":"Number of times the plugin is used.","isColumnEdited":true}
     ],
     "userModified": true
   },
