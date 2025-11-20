@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_codeenvs",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027code_environments\u0027 dataset provides a comprehensive overview of various code environments used within a software or data science platform. Each entry in the dataset represents a distinct environment, detailing its name, programming language, deployment mode, and owner. Additionally, it includes technical specifications such as the Python interpreter version, core package set, and the file path where the environment is stored. The dataset also records the disk size in megabytes, offering insights into the storage requirements of each environment. A unique feature of this dataset is the \u0027usages\u0027 column, which lists the projects or applications that utilize each environment, providing a clear view of its application scope. This dataset is particularly useful for system administrators and data scientists who need to manage and optimize code environments, ensuring compatibility and efficiency across different projects. It can also aid in auditing and tracking the usage of resources within an organization.",
+  "shortDesc": "Dataset of code environments with details on language, owner, and usage.",
   "checklists": {
     "checklists": []
   },
@@ -44,15 +46,15 @@
   },
   "schema": {
     "columns": [
-      {"name":"envName","type":"string"},
-      {"name":"envLang","type":"string"},
-      {"name":"deploymentMode","type":"string"},
-      {"name":"owner","type":"string","meaning":"Text"},
-      {"name":"pythonInterpreter","type":"string"},
-      {"name":"corePackagesSet","type":"string"},
-      {"name":"path","type":"string"},
-      {"name":"disk_size_megabytes","type":"double","meaning":"DoubleMeaning"},
-      {"name":"usages","type":"string"}
+      {"name":"envName","type":"string","comment":"Name of the code environment, identifies environment.","isColumnEdited":true},
+      {"name":"envLang","type":"string","comment":"Programming language used, specifies environment language.","isColumnEdited":true},
+      {"name":"deploymentMode","type":"string","comment":"Mode of deployment, indicates management type.","isColumnEdited":true},
+      {"name":"owner","type":"string","comment":"Owner\u0027s email, identifies environment administrator.","meaning":"Text","isColumnEdited":true},
+      {"name":"pythonInterpreter","type":"string","comment":"Python version used, specifies interpreter version.","isColumnEdited":true},
+      {"name":"corePackagesSet","type":"string","comment":"Core package configuration, defines package set.","isColumnEdited":true},
+      {"name":"path","type":"string","comment":"File path to environment, locates environment storage.","isColumnEdited":true},
+      {"name":"disk_size_megabytes","type":"double","comment":"Disk size in megabytes, indicates storage usage.","meaning":"DoubleMeaning","isColumnEdited":true},
+      {"name":"usages","type":"string","comment":"List of projects using environment, shows application scope.","isColumnEdited":true}
     ],
     "userModified": true
   },
