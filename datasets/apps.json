@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_apps",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027apps\u0027 dataset provides a comprehensive overview of various applications, capturing essential metadata such as visibility, version, and descriptive details. This dataset is particularly useful for managing and analyzing application data within a software ecosystem, such as Dataiku. It includes information on whether an application has limited visibility, its unique identifier, version, and a descriptive label. Additionally, it provides a short description of each application, which can include creation details and usage instructions. The dataset also categorizes applications with tags, indicating their relevance to specific domains or functionalities. Other important attributes include the origin of the application, whether it is a project or a plugin, and the number of instances of the application. This dataset is valuable for developers, project managers, and analysts who need to track application usage, manage application lifecycles, and ensure that applications meet organizational requirements. Its structured format allows for easy integration into data analysis workflows, enabling users to derive insights and make informed decisions about application deployment and management.",
+  "shortDesc": "Dataset of application metadata with visibility, version, and description details.",
   "checklists": {
     "checklists": []
   },
@@ -44,17 +46,17 @@
   },
   "schema": {
     "columns": [
-      {"name":"onlyLimitedVisibility","type":"string"},
-      {"name":"appId","type":"string"},
-      {"name":"appVersion","type":"string"},
-      {"name":"label","type":"string"},
-      {"name":"shortDesc","type":"string"},
-      {"name":"tags","type":"string"},
-      {"name":"isAppImg","type":"string"},
-      {"name":"origin","type":"string"},
-      {"name":"originProjectKey","type":"string"},
-      {"name":"instanceCount","type":"string"},
-      {"name":"useAsRecipe","type":"string"}
+      {"name":"onlyLimitedVisibility","type":"string","comment":"Indicates if app has limited visibility, boolean value.","isColumnEdited":true},
+      {"name":"appId","type":"string","comment":"Unique identifier for each application, text format.","isColumnEdited":true},
+      {"name":"appVersion","type":"string","comment":"Version information of the application, text format.","isColumnEdited":true},
+      {"name":"label","type":"string","comment":"Descriptive label for the application, free text.","isColumnEdited":true},
+      {"name":"shortDesc","type":"string","comment":"Brief description of the application, free text.","isColumnEdited":true},
+      {"name":"tags","type":"string","comment":"Tags categorizing the application, JSON array format.","isColumnEdited":true},
+      {"name":"isAppImg","type":"string","comment":"Indicates if app is an image, boolean value.","isColumnEdited":true},
+      {"name":"origin","type":"string","comment":"Source of the application, either project or plugin.","isColumnEdited":true},
+      {"name":"originProjectKey","type":"string","comment":"Key of the originating project, text format.","isColumnEdited":true},
+      {"name":"instanceCount","type":"string","comment":"Number of instances of the application, integer value.","isColumnEdited":true},
+      {"name":"useAsRecipe","type":"string","comment":"Indicates if app is used as a recipe, boolean value.","isColumnEdited":true}
     ],
     "userModified": true
   },
