@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_clusters",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027clusters\u0027 dataset provides a comprehensive overview of various cluster configurations, detailing their unique identifiers, ownership, and usage statistics. This dataset is particularly useful for IT administrators and data engineers who manage and monitor cluster environments. Each entry in the dataset represents a distinct cluster, identified by a unique \u0027id\u0027 and \u0027name\u0027. The \u0027owner\u0027 column specifies the entity responsible for the cluster, which is crucial for accountability and management purposes. The \u0027type\u0027 and \u0027architecture\u0027 columns describe the cluster\u0027s setup, such as whether it is manually configured or based on a specific architecture like Kubernetes. The \u0027state\u0027 column indicates the current operational status of the cluster, which is essential for maintenance and troubleshooting. Additionally, the dataset tracks the number of scenarios and projects each cluster is used in, providing insights into its utilization and importance within the organization. This dataset can be instrumental in optimizing resource allocation, planning infrastructure upgrades, and ensuring efficient cluster management.",
+  "shortDesc": "Dataset of cluster configurations with details on ownership and usage.",
   "checklists": {
     "checklists": []
   },
@@ -44,14 +46,14 @@
   },
   "schema": {
     "columns": [
-      {"name":"id","type":"string"},
-      {"name":"name","type":"string"},
-      {"name":"owner","type":"string"},
-      {"name":"type","type":"string"},
-      {"name":"architecture","type":"string"},
-      {"name":"state","type":"string"},
-      {"name":"usedInScenarios","type":"string"},
-      {"name":"usedInProjects","type":"string"}
+      {"name":"id","type":"string","comment":"Unique identifier for each cluster, essential for tracking.","isColumnEdited":true},
+      {"name":"name","type":"string","comment":"Name of the cluster, used for identification.","isColumnEdited":true},
+      {"name":"owner","type":"string","comment":"Entity responsible for the cluster, crucial for management.","isColumnEdited":true},
+      {"name":"type","type":"string","comment":"Configuration type of the cluster, such as manual.","isColumnEdited":true},
+      {"name":"architecture","type":"string","comment":"Underlying architecture of the cluster, e.g., Kubernetes.","isColumnEdited":true},
+      {"name":"state","type":"string","comment":"Current operational status of the cluster.","isColumnEdited":true},
+      {"name":"usedInScenarios","type":"string","comment":"Number of scenarios utilizing the cluster.","isColumnEdited":true},
+      {"name":"usedInProjects","type":"string","comment":"Number of projects utilizing the cluster.","isColumnEdited":true}
     ],
     "userModified": true
   },
