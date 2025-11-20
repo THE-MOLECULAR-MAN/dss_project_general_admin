@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The Code_Env_Summary dataset provides a comprehensive overview of various coding environments, focusing on the programming language used and the associated disk usage statistics. This dataset is particularly useful for analyzing the storage requirements of different coding environments, which can help in optimizing resource allocation and planning for infrastructure needs. The dataset includes key metrics such as the minimum, maximum, average, median, and total disk size in megabytes, offering a detailed view of disk usage patterns. Additionally, it records the count of environments, which can be used to understand the distribution and frequency of different programming languages in use. This dataset is valuable for IT administrators, data scientists, and developers who need to manage and optimize coding environments, ensuring efficient use of storage resources. By analyzing this data, organizations can make informed decisions about scaling their infrastructure and improving the performance of their development environments.",
+  "shortDesc": "Dataset summarizing coding environments with disk usage statistics.",
   "checklists": {
     "checklists": []
   },
@@ -62,13 +64,13 @@
   },
   "schema": {
     "columns": [
-      {"name":"envLang","type":"string"},
-      {"name":"disk_size_megabytes_min","type":"double"},
-      {"name":"disk_size_megabytes_max","type":"double"},
-      {"name":"disk_size_megabytes_avg","type":"double"},
-      {"name":"disk_size_megabytes_median","type":"double"},
-      {"name":"disk_size_megabytes_sum","type":"double"},
-      {"name":"count","type":"bigint"}
+      {"name":"envLang","type":"string","comment":"Programming language used in the environment.","isColumnEdited":true},
+      {"name":"disk_size_megabytes_min","type":"double","comment":"Minimum disk size in megabytes for environments.","isColumnEdited":true},
+      {"name":"disk_size_megabytes_max","type":"double","comment":"Maximum disk size in megabytes for environments.","isColumnEdited":true},
+      {"name":"disk_size_megabytes_avg","type":"double","comment":"Average disk size in megabytes for environments.","isColumnEdited":true},
+      {"name":"disk_size_megabytes_median","type":"double","comment":"Median disk size in megabytes for environments.","isColumnEdited":true},
+      {"name":"disk_size_megabytes_sum","type":"double","comment":"Total disk size in megabytes for environments.","isColumnEdited":true},
+      {"name":"count","type":"bigint","comment":"Number of coding environments recorded.","isColumnEdited":true}
     ],
     "userModified": true
   },
