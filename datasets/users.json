@@ -2,6 +2,8 @@
   "type": "CustomPython_xzibit_users",
   "managed": false,
   "featureGroup": false,
+  "description": "The \u0027users\u0027 dataset provides comprehensive information about user accounts, including their login credentials, profile details, and activity history. This dataset is particularly useful for managing user access and monitoring user behavior within a system. Key features include the \u0027login\u0027 column, which stores user email addresses or identifiers, and the \u0027email\u0027 column, which contains the user\u0027s email address for communication purposes. The \u0027displayName\u0027 column offers a user-friendly name for display purposes. The \u0027groups\u0027 column lists the user groups a person belongs to, which can be crucial for role-based access control. The \u0027userProfile\u0027 and \u0027resultingUserProfile\u0027 columns describe the user\u0027s role or permissions within the system. The dataset also tracks user activity through \u0027creationDate\u0027, \u0027last_successful_login\u0027, and \u0027last_session_activity\u0027, providing insights into user engagement and system usage. The \u0027enabled\u0027 column indicates whether a user account is active, which is essential for security and account management. Overall, this dataset is a valuable resource for administrators and analysts looking to understand user interactions and manage user accounts effectively.",
+  "shortDesc": "User dataset with login, profile, and activity details.",
   "checklists": {
     "checklists": []
   },
@@ -44,17 +46,17 @@
   },
   "schema": {
     "columns": [
-      {"name":"login","type":"string"},
-      {"name":"sourceType","type":"string"},
-      {"name":"displayName","type":"string"},
-      {"name":"groups","type":"string"},
-      {"name":"email","type":"string"},
-      {"name":"userProfile","type":"string"},
-      {"name":"creationDate","type":"string"},
-      {"name":"enabled","type":"string"},
-      {"name":"resultingUserProfile","type":"string"},
-      {"name":"last_successful_login","type":"string"},
-      {"name":"last_session_activity","type":"string"}
+      {"name":"login","type":"string","comment":"User\u0027s login identifier, typically an email.","isColumnEdited":true},
+      {"name":"sourceType","type":"string","comment":"Source of user account creation, e.g., LOCAL.","isColumnEdited":true},
+      {"name":"displayName","type":"string","comment":"User\u0027s display name for identification.","isColumnEdited":true},
+      {"name":"groups","type":"string","comment":"User\u0027s group memberships, stored as JSON array.","isColumnEdited":true},
+      {"name":"email","type":"string","comment":"User\u0027s email address for communication.","isColumnEdited":true},
+      {"name":"userProfile","type":"string","comment":"User\u0027s role or profile within the system.","isColumnEdited":true},
+      {"name":"creationDate","type":"string","comment":"Date and time of account creation.","isColumnEdited":true},
+      {"name":"enabled","type":"string","comment":"Indicates if the user account is active.","isColumnEdited":true},
+      {"name":"resultingUserProfile","type":"string","comment":"Effective user role after permissions.","isColumnEdited":true},
+      {"name":"last_successful_login","type":"string","comment":"Timestamp of last successful login.","isColumnEdited":true},
+      {"name":"last_session_activity","type":"string","comment":"Timestamp of last user session activity.","isColumnEdited":true}
     ],
     "userModified": true
   },
