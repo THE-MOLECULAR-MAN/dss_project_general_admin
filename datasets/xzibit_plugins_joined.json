@@ -2,6 +2,8 @@
   "type": "PostgreSQL",
   "managed": true,
   "featureGroup": false,
+  "description": "The \u0027xzibit_plugins_joined\u0027 dataset provides a comprehensive overview of projects and plugins, focusing on their management and usage within an organization. It includes detailed information about each project, such as unique identifiers, ownership, location, and status, as well as metadata like descriptive names and modification timestamps. Additionally, the dataset captures whether a project is a tutorial and includes free-text descriptions for context. The dataset also tracks plugin details, including identifiers, names, descriptions, authors, and versions, along with their usage across projects. This dataset is particularly useful for administrators and developers who need to manage and track project and plugin usage, ensuring efficient collaboration and resource allocation. It can be used to analyze project hierarchies, monitor development status, and assess the impact of plugins across different projects. The inclusion of JSON arrays for contributors and tags allows for flexible categorization and search capabilities, enhancing the dataset\u0027s utility in project management and decision-making processes.",
+  "shortDesc": "Dataset of project and plugin details for tracking and management.",
   "checklists": {
     "checklists": []
   },
