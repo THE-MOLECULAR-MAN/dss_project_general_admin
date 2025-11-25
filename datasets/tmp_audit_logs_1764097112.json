@@ -26,10 +26,11 @@
     }
   },
   "formatParams": {
+    "style": "excel",
     "charset": "utf8",
-    "quoteChar": "\"",
-    "escapeChar": "\\",
-    "maxRowChars": 100000000,
+    "separator": "\u001f",
+    "quoteChar": "",
+    "escapeChar": "",
     "dateSerializationFormat": "ISO",
     "arrayMapFormat": "json",
     "hiveSeparators": [
@@ -84,7 +85,9 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"line","type":"string"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
