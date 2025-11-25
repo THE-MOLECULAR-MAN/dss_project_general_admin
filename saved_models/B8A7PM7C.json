@@ -10,11 +10,11 @@
     {
       "versionId": "v1",
       "versionTag": {
-        "versionNumber": 0,
+        "versionNumber": 1,
         "lastModifiedBy": {
           "login": "admin"
         },
-        "lastModifiedOn": 1764080944925
+        "lastModifiedOn": 1764080952949
       },
       "creationTag": {
         "versionNumber": 0,
@@ -46,6 +46,7 @@
       },
       "toolsUsingAgentSettings": {
         "tools": [],
+        "llmId": "huggingfacelocal:tim_local_hugging_face1:meta-llama/Meta-Llama-3.1-8B-Instruct",
         "completionSettings": {
           "stopSequences": [],
           "outputTrajectory": false
