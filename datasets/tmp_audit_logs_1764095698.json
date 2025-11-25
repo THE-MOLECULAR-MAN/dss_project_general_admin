@@ -55,7 +55,9 @@
     }
   },
   "schema": {
-    "columns": [],
+    "columns": [
+      {"name":"line","type":"string"}
+    ],
     "userModified": true
   },
   "typeSystemVersion": "V2",
