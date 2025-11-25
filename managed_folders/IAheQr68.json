@@ -2,8 +2,8 @@
   "name": "tmp_audit_access_1764095961",
   "type": "Filesystem",
   "params": {
-    "connection": "filesystem_folders",
-    "path": "/${projectKey}/${odbId}",
+    "connection": "tmp_audit_root_1764095961",
+    "path": "/audit",
     "notReadyIfEmpty": false,
     "filesSelectionRules": {
       "mode": "ALL",
