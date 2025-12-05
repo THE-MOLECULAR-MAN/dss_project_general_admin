@@ -19,10 +19,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "plugins",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "projects",
       "objectType": "DATASET"
     },
