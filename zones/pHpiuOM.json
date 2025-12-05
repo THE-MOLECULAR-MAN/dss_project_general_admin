@@ -7,10 +7,6 @@
       "objectType": "RECIPE"
     },
     {
-      "objectId": "compute_xzibit_codeenvs_copy_by_envName2",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "code_environments",
       "objectType": "DATASET"
     },
