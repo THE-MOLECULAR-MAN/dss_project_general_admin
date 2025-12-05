@@ -3,10 +3,6 @@
   "color": "#31439C",
   "items": [
     {
-      "objectId": "compute_xzibit_codeenvs_copy",
-      "objectType": "RECIPE"
-    },
-    {
       "objectId": "code_environments",
       "objectType": "DATASET"
     }
