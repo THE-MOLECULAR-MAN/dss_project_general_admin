@@ -15,10 +15,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "apps",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "connections",
       "objectType": "DATASET"
     },
