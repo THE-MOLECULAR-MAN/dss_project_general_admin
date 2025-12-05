@@ -27,10 +27,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "clusters",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "projects",
       "objectType": "DATASET"
     },
