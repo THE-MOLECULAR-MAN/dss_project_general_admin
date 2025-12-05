@@ -9,10 +9,6 @@
     {
       "objectId": "code_environments",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "code_env_PSQL",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
