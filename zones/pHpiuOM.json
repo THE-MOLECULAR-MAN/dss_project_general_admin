@@ -37,10 +37,6 @@
     {
       "objectId": "Code_Env_Summary",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "xzibit_recipes",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
