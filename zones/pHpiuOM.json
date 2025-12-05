@@ -15,10 +15,6 @@
       "objectType": "DATASET"
     },
     {
-      "objectId": "projects",
-      "objectType": "DATASET"
-    },
-    {
       "objectId": "code_env_PSQL",
       "objectType": "DATASET"
     },
