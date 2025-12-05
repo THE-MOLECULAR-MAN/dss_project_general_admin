@@ -15,14 +15,7 @@
     ]
   },
   "exposedObjects": {
-    "objects": [
-      {
-        "type": "DATASET",
-        "localName": "xzibit_datasets_copy",
-        "quickSharingEnabled": true,
-        "rules": []
-      }
-    ]
+    "objects": []
   },
   "projectType": "REGULAR",
   "projectAppType": "REGULAR",
