@@ -17,10 +17,6 @@
     {
       "objectId": "code_env_PSQL",
       "objectType": "DATASET"
-    },
-    {
-      "objectId": "Code_Env_Summary",
-      "objectType": "DATASET"
     }
   ],
   "shared": [],
