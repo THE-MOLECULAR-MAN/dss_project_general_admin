@@ -29,7 +29,7 @@
         "minute": 0,
         "hour": 13,
         "timezone": "America/New_York",
-        "lastUpdate": 1767040397405
+        "lastUpdate": 1767040451796
       }
     }
   ],
@@ -108,6 +108,33 @@
           },
           "adminConfig": {
             "allProjects": true
+          },
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "runmacro_pyrunnable_builtin-macros_delete-old-model-comparison-samples",
+        "type": "runnable",
+        "name": "Clear model comparison samples",
+        "enabled": true,
+        "alwaysShowComment": false,
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "runnableType": "pyrunnable_builtin-macros_delete-old-model-comparison-samples",
+          "config": {
+            "age": 15,
+            "performDeletion": false
+          },
+          "adminConfig": {
+            "allProjects": false
           },
           "proceedOnFailure": false
         }
