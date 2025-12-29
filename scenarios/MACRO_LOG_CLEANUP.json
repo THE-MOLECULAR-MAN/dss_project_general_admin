@@ -29,7 +29,7 @@
         "minute": 0,
         "hour": 13,
         "timezone": "America/New_York",
-        "lastUpdate": 1763065158182
+        "lastUpdate": 1767040397405
       }
     }
   ],
@@ -76,7 +76,7 @@
         "params": {
           "runnableType": "pyrunnable_builtin-macros_clear-job-logs",
           "config": {
-            "age": 15,
+            "age": 30,
             "performDeletion": true
           },
           "adminConfig": {
@@ -103,7 +103,7 @@
         "params": {
           "runnableType": "pyrunnable_builtin-macros_clear-scenario-logs",
           "config": {
-            "age": 15,
+            "age": 30,
             "performDeletion": true
           },
           "adminConfig": {
