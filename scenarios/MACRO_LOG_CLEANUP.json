@@ -29,7 +29,7 @@
         "minute": 0,
         "hour": 13,
         "timezone": "America/New_York",
-        "lastUpdate": 1767040638299
+        "lastUpdate": 1767040646552
       }
     }
   ],
@@ -205,7 +205,7 @@
       {
         "id": "runmacro_pyrunnable_builtin-macros_clear-agent-logs",
         "type": "runnable",
-        "name": "Remove old container images",
+        "name": "clear agent logs",
         "enabled": true,
         "alwaysShowComment": false,
         "runConditionType": "RUN_ALWAYS",
