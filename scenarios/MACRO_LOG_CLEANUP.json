@@ -29,7 +29,7 @@
         "minute": 0,
         "hour": 13,
         "timezone": "America/New_York",
-        "lastUpdate": 1767040602186
+        "lastUpdate": 1767040606100
       }
     }
   ],
@@ -172,7 +172,7 @@
         "name": "Remove old container images",
         "enabled": true,
         "alwaysShowComment": false,
-        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionType": "RUN_ALWAYS",
         "runConditionStatuses": [
           "SUCCESS",
           "WARNING"
