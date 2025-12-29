@@ -29,7 +29,7 @@
         "minute": 0,
         "hour": 13,
         "timezone": "America/New_York",
-        "lastUpdate": 1767040646552
+        "lastUpdate": 1767040665772
       }
     }
   ],
@@ -169,7 +169,7 @@
       {
         "id": "runmacro_pyrunnable_builtin-macros_remove-old-container-images",
         "type": "runnable",
-        "name": "Remove old container images",
+        "name": "container images",
         "enabled": true,
         "alwaysShowComment": false,
         "runConditionType": "RUN_ALWAYS",
