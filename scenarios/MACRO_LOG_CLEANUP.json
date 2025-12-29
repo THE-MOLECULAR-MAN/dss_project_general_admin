@@ -1,7 +1,7 @@
 {
   "type": "step_based",
   "name": "Clean up scenario and job logs",
-  "active": true,
+  "active": false,
   "runAsUser": "admin",
   "checklists": {
     "checklists": []
@@ -29,7 +29,7 @@
         "minute": 0,
         "hour": 13,
         "timezone": "America/New_York",
-        "lastUpdate": 1767040523340
+        "lastUpdate": 1767040533349
       }
     }
   ],
