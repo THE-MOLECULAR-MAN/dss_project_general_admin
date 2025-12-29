@@ -29,7 +29,7 @@
         "minute": 0,
         "hour": 13,
         "timezone": "America/New_York",
-        "lastUpdate": 1767040533349
+        "lastUpdate": 1767040602186
       }
     }
   ],
@@ -163,6 +163,42 @@
           "adminConfig": {
             "allProjects": true
           },
+          "proceedOnFailure": false
+        }
+      },
+      {
+        "id": "runmacro_pyrunnable_builtin-macros_remove-old-container-images",
+        "type": "runnable",
+        "name": "Remove old container images",
+        "enabled": true,
+        "alwaysShowComment": false,
+        "runConditionType": "RUN_IF_STATUS_MATCH",
+        "runConditionStatuses": [
+          "SUCCESS",
+          "WARNING"
+        ],
+        "runConditionExpression": "",
+        "resetScenarioStatus": false,
+        "delayBetweenRetries": 10,
+        "maxRetriesOnFail": 0,
+        "params": {
+          "runnableType": "pyrunnable_builtin-macros_remove-old-container-images",
+          "config": {
+            "container-exec": true,
+            "spark": true,
+            "api_deployer": true,
+            "cde": true,
+            "code_envs": true,
+            "code_studio": true,
+            "rm_none_images": true,
+            "perform_deletion": true,
+            "force_rm": false,
+            "dont_guess_image_name": false,
+            "custom_image_name": "dku-exec-something",
+            "use_custom_host": false,
+            "with_remote_registries": false
+          },
+          "adminConfig": {},
           "proceedOnFailure": false
         }
       }
