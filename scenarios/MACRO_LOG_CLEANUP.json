@@ -29,7 +29,7 @@
         "minute": 0,
         "hour": 13,
         "timezone": "America/New_York",
-        "lastUpdate": 1767040506438
+        "lastUpdate": 1767040523340
       }
     }
   ],
@@ -131,10 +131,10 @@
           "runnableType": "pyrunnable_builtin-macros_delete-old-model-comparison-samples",
           "config": {
             "age": 15,
-            "performDeletion": false
+            "performDeletion": true
           },
           "adminConfig": {
-            "allProjects": false
+            "allProjects": true
           },
           "proceedOnFailure": false
         }
@@ -143,7 +143,7 @@
         "id": "runmacro_pyrunnable_builtin-macros_clear-continuous-activity-logs",
         "type": "runnable",
         "name": "Clear model comparison samples",
-        "enabled": false,
+        "enabled": true,
         "alwaysShowComment": false,
         "runConditionType": "RUN_ALWAYS",
         "runConditionStatuses": [
