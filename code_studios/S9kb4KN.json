@@ -1,0 +1,19 @@
+{
+  "name": "Tim_Example_Code_Studio",
+  "libName": "Tim_Example_Code_Studio",
+  "templateId": "Python_3-12_Code_Studio",
+  "params": {},
+  "owner": "demo",
+  "creationTag": {
+    "versionNumber": 0,
+    "lastModifiedBy": {
+      "login": "demo"
+    },
+    "lastModifiedOn": 1767626784500
+  },
+  "tags": [],
+  "customFields": {},
+  "checklists": {
+    "checklists": []
+  }
+}
