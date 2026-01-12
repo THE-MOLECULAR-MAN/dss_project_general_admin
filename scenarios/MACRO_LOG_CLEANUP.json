@@ -1,7 +1,7 @@
 {
   "type": "step_based",
   "name": "Clean up scenario and job logs",
-  "active": true,
+  "active": false,
   "runAsUser": "admin",
   "checklists": {
     "checklists": []
@@ -12,7 +12,8 @@
     "suppressTriggersWhileRunning": true
   },
   "tags": [
-    "production_critical"
+    "production_critical",
+    "auto_disabled"
   ],
   "triggers": [
     {
@@ -31,7 +32,7 @@
         "minute": 0,
         "hour": 13,
         "timezone": "America/New_York",
-        "lastUpdate": 1768229394932
+        "lastUpdate": 1768233927606
       }
     }
   ],
