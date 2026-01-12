@@ -1,7 +1,7 @@
 {
   "type": "step_based",
   "name": "Update_GitHub",
-  "active": true,
+  "active": false,
   "runAsUser": "admin",
   "checklists": {
     "checklists": []
@@ -11,7 +11,9 @@
     "squashDelayedTriggers": true,
     "suppressTriggersWhileRunning": true
   },
-  "tags": [],
+  "tags": [
+    "auto_disabled"
+  ],
   "triggers": [
     {
       "id": "tBcE9p3k",
@@ -29,7 +31,7 @@
         "minute": 30,
         "hour": 17,
         "timezone": "America/New_York",
-        "lastUpdate": 1763065154555
+        "lastUpdate": 1768233927582
       }
     }
   ],

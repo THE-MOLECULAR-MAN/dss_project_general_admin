@@ -13,6 +13,7 @@
     "dss_administration": {
       "color": "#a088bd"
     },
-    "production_critical": {}
+    "production_critical": {},
+    "auto_disabled": {}
   }
 }
