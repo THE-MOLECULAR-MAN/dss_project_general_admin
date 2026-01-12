@@ -12,6 +12,7 @@
     },
     "dss_administration": {
       "color": "#a088bd"
-    }
+    },
+    "production_critical": {}
   }
 }
