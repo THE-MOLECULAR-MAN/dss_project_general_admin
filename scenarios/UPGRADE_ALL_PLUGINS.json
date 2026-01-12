@@ -1,7 +1,7 @@
 {
   "type": "step_based",
   "name": "Upgrade_All_Plugins",
-  "active": true,
+  "active": false,
   "runAsUser": "admin",
   "checklists": {
     "checklists": []
@@ -11,7 +11,9 @@
     "squashDelayedTriggers": true,
     "suppressTriggersWhileRunning": true
   },
-  "tags": [],
+  "tags": [
+    "auto_disabled"
+  ],
   "triggers": [
     {
       "id": "RYeqG5I0",
@@ -30,7 +32,7 @@
         "minute": 30,
         "hour": 8,
         "timezone": "America/New_York",
-        "lastUpdate": 1763065150267
+        "lastUpdate": 1768233927630
       }
     }
   ],
